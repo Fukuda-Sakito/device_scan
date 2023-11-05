@@ -1,16 +1,16 @@
-# Nmap 7.94 scan initiated Mon Nov  6 01:58:11 2023 as: nmap -A -oN nmap_scan_192.168.5.43.txt 192.168.5.43
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-11-06 03:08 JST
 Nmap scan report for 192.168.5.43
-Host is up (0.0017s latency).
+Host is up (0.0019s latency).
 Not shown: 995 closed tcp ports (conn-refused)
 PORT      STATE SERVICE         VERSION
 8008/tcp  open  http?
 |_http-title: Site doesn't have a title (text/html).
 8009/tcp  open  ssl/ajp13?
+| ssl-cert: Subject: commonName=fc79a8a7-dc48-e202-222c-fc8739872226
+| Not valid before: 2023-11-05T05:48:54
+|_Not valid after:  2023-11-07T05:48:54
 |_ajp-methods: Failed to get a valid response for the OPTION request
 |_ssl-date: TLS randomness does not represent time
-| ssl-cert: Subject: commonName=fc79a8a7-dc48-e202-222c-fc8739872226
-| Not valid before: 2023-11-04T05:48:49
-|_Not valid after:  2023-11-06T05:48:49
 8443/tcp  open  ssl/https-alt?
 | ssl-cert: Subject: commonName=L234UI FA8FCA8A8503/organizationName=Google Inc/stateOrProvinceName=California/countryName=US
 | Not valid before: 2018-01-23T03:22:36
@@ -19,8 +19,8 @@ PORT      STATE SERVICE         VERSION
 9000/tcp  open  ssl/cslistener?
 10001/tcp open  scp-config?
 1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-SF-Port10001-TCP:V=7.94%I=7%D=11/6%Time=6547C9AA%P=arm-apple-darwin23.0.0%
+SF-Port10001-TCP:V=7.94%I=7%D=11/6%Time=6547DA3B%P=arm-apple-darwin23.0.0%
 SF:r(JavaRMI,7,"\x15\x03\x01\0\x02\x02F");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Nov  6 02:03:13 2023 -- 1 IP address (1 host up) scanned in 302.13 seconds
+Nmap done: 1 IP address (1 host up) scanned in 302.38 seconds

@@ -1,6 +1,6 @@
-# Nmap 7.94 scan initiated Mon Nov  6 01:52:19 2023 as: nmap -A -oN nmap_scan_192.168.5.2.txt 192.168.5.2
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-11-06 03:03 JST
 Nmap scan report for 192.168.5.2
-Host is up (0.0023s latency).
+Host is up (0.0025s latency).
 Not shown: 998 closed tcp ports (conn-refused)
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     Mocana NanoSSH 5.3.1 (protocol 2.0)
@@ -10,4 +10,4 @@ PORT   STATE SERVICE VERSION
 Service Info: Device: switch; CPE: cpe:/h:hp:2530
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Nov  6 01:52:20 2023 -- 1 IP address (1 host up) scanned in 1.50 seconds
+Nmap done: 1 IP address (1 host up) scanned in 2.61 seconds

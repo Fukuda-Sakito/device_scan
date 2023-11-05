@@ -1,8 +1,8 @@
-# Nmap 7.94 scan initiated Mon Nov  6 01:56:06 2023 as: nmap -A -oN nmap_scan_192.168.5.38.txt 192.168.5.38
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-11-06 03:06 JST
 Nmap scan report for 192.168.5.38
-Host is up (0.0075s latency).
+Host is up (0.0079s latency).
 All 1000 scanned ports on 192.168.5.38 are in ignored states.
 Not shown: 1000 closed tcp ports (conn-refused)
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Nov  6 01:56:08 2023 -- 1 IP address (1 host up) scanned in 1.65 seconds
+Nmap done: 1 IP address (1 host up) scanned in 1.98 seconds

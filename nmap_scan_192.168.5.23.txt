@@ -1,13 +1,13 @@
-# Nmap 7.94 scan initiated Mon Nov  6 01:53:24 2023 as: nmap -A -oN nmap_scan_192.168.5.23.txt 192.168.5.23
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-11-06 03:04 JST
 Nmap scan report for 192.168.5.23
-Host is up (0.000048s latency).
+Host is up (0.000052s latency).
 Not shown: 998 closed tcp ports (conn-refused)
 PORT     STATE SERVICE VERSION
 5000/tcp open  rtsp    AirTunes rtspd 710.79.1
 |_rtsp-methods: ERROR: Script execution failed (use -d to debug)
 7000/tcp open  rtsp    AirTunes rtspd 710.79.1
-|_rtsp-methods: ERROR: Script execution failed (use -d to debug)
 |_irc-info: Unable to open connection
+|_rtsp-methods: ERROR: Script execution failed (use -d to debug)
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Mon Nov  6 01:53:58 2023 -- 1 IP address (1 host up) scanned in 34.32 seconds
+Nmap done: 1 IP address (1 host up) scanned in 34.30 seconds

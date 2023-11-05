@@ -1,41 +1,40 @@
-import { execSync } from 'child_process'; // Node で外部コマンドを実行するためのモジュール。bash コマンドや nmap を利用できるようになる。
+import { execSync } from 'child_process';
+import { writeFileSync } from 'fs';
+import { performNmapScan } from './perform_nmap_scan';
 
-function getIps(): string[] {
-  /*
-    * この関数は、実行端末と、ローカルネットワーク上の IP アドレスを取得する。
-    * この関数は、`arp -a` と `ifconfig` を実行し、
-    * それぞれのコマンドの出力から IP アドレスを取得する。
-    * この関数は、取得した IP アドレスを配列に格納し、
-    * その配列を返す。
-    * この関数は、`getIps` という名前でエクスポートされる。
-  */
-
-  const ips: string[] = [];  // 取得した IP アドレスを格納する配列
-  const arpOutput: string = execSync('arp -a').toString();  // `arp -a` から IP アドレスを取得
-  // 改行コードで分割し、各行について処理を行う
-  arpOutput.split('\n').forEach(line => {
-    const parts: string[] = line.split(' ');
-    if (parts.length > 1) {
-      const ip: string = parts[1].replace(/[()]/g, '');
-      ips.push(ip);
-    }
-  });
-
-  // const ifconfigOutput: string = execSync('ifconfig').toString();  // ifconfig から IP アドレスを取得
-  // ifconfigOutput.split('\n').forEach(line => {
-  //   if (line.includes('inet ') && !line.includes('127.0.0.1')) {
-  //     const parts: string[] = line.trim().split(' ');
-  //     const ip: string = parts[1];
-  //     ips.push(ip);
-  //   }
-  // });
-
-  return ips;
+interface IpMacPair {
+  ip: string;
+  mac: string;
+  serviceInfo: string;
 }
 
-// 直接実行した場合に、IP アドレスを出力するデバックコード
+async function getIps(): Promise<IpMacPair[]> {
+  const pairs: IpMacPair[] = [];
+  const arpOutput: string = execSync('arp -a').toString();
+
+  for (const line of arpOutput.split('\n')) {
+    const parts: string[] = line.split(' ');
+    if (parts.length > 3) {
+      const ip: string = parts[1].replace(/[()]/g, '');
+      const ipParts: string[] = ip.split('.');
+      if (ipParts[3].length !== 3) {
+        const mac: string = parts[3];
+        const serviceInfo: string = await performNmapScan(ip);
+        pairs.push({ ip, mac, serviceInfo });
+      }
+    }
+  }
+
+  return pairs;
+}
+
 if (require.main === module) {
-  getIps().forEach(ip => console.log(ip));
+  getIps().then(pairs => {
+    pairs.forEach(pair => console.log(pair));
+
+    // JSON 形式でファイルに保存
+    writeFileSync('ips.json', JSON.stringify(pairs, null, 2));
+  });
 }
 
 export { getIps };
