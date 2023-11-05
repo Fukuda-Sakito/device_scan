@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 import { execSync } from 'child_process';
 import { writeFileSync } from 'fs';
 import { performNmapScan } from './perform_nmap_scan';
@@ -33,7 +34,7 @@ if (require.main === module) {
     pairs.forEach(pair => console.log(pair));
 
     // JSON 形式でファイルに保存
-    writeFileSync('ips.json', JSON.stringify(pairs, null, 2));
+    writeFileSync('src/ips.json', JSON.stringify(pairs, null, 2));
   });
 }
 
