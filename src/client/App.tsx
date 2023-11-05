@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 import ScanResults from './ScanResults';
+import AppScreen from './design';
 
 function App() {
   return (
     <div>
-      <h1>Network Scanner App</h1>
-      <ScanResults />
+      {/* <h1>Network Scanner App</h1> */}
+      <AppScreen />
+      {/* <ScanResults /> */}
     </div>
   );
 
