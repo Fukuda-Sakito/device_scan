@@ -1,0 +1,4 @@
+# Nmap 7.94 scan initiated Mon Nov  6 02:03:17 2023 as: nmap -A -oN nmap_scan_224.0.0.251.txt 224.0.0.251
+Strange read error from 224.0.0.251 (47 - 'Address family not supported by protocol family')
+Strange read error from 224.0.0.251 (47 - 'Address family not supported by protocol family')
+# Nmap done at Mon Nov  6 02:03:17 2023 -- 1 IP address (0 hosts up) scanned in 0.09 seconds

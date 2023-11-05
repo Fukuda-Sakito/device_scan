@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch get_ips.js",
+        "program": "${workspaceFolder}/src/scripts/get_ips.ts",
+        "console": "integratedTerminal",
+        "runtimeExecutable": "/opt/homebrew/bin/node"
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch perform_nmap_scan.js",
+        "program": "${workspaceFolder}/src/scripts/perform_nmap_scan.ts",
+        "console": "integratedTerminal",
+        "runtimeExecutable": "/opt/homebrew/bin/node"
+      }
+    ]
+  }

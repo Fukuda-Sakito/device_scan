@@ -21,14 +21,14 @@ function getIps(): string[] {
     }
   });
 
-  const ifconfigOutput: string = execSync('ifconfig').toString();  // ifconfig から IP アドレスを取得
-  ifconfigOutput.split('\n').forEach(line => {
-    if (line.includes('inet ') && !line.includes('127.0.0.1')) {
-      const parts: string[] = line.trim().split(' ');
-      const ip: string = parts[1];
-      ips.push(ip);
-    }
-  });
+  // const ifconfigOutput: string = execSync('ifconfig').toString();  // ifconfig から IP アドレスを取得
+  // ifconfigOutput.split('\n').forEach(line => {
+  //   if (line.includes('inet ') && !line.includes('127.0.0.1')) {
+  //     const parts: string[] = line.trim().split(' ');
+  //     const ip: string = parts[1];
+  //     ips.push(ip);
+  //   }
+  // });
 
   return ips;
 }

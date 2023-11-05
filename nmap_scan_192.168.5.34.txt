@@ -1,0 +1,2 @@
+# Nmap 7.94 scan initiated Mon Nov  6 01:56:03 2023 as: nmap -A -oN nmap_scan_192.168.5.34.txt 192.168.5.34
+# Nmap done at Mon Nov  6 01:56:06 2023 -- 1 IP address (0 hosts up) scanned in 3.17 seconds

@@ -9,15 +9,16 @@ export function performNmapScan(ip: string): void {
   }
 }
 
-export function runNmapScans(ips: string[]): void {
-  ips.forEach(ip => {
-    getIps().forEach(ip => console.log(ip));
+export async function runNmapScans(ips: string[]): Promise<void> {
+  for (const ip of ips) {
+    console.log(ip, "実行中");
     performNmapScan(ip);
-  });
+  }
 }
 
 // 直接実行した場合に、IP アドレスの配列を取得し、スキャンを実行する
 if (require.main === module) {
   const ips = getIps();
+  console.log(ips, "受け取った配列")
   runNmapScans(ips);
 }
