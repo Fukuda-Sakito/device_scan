@@ -8,6 +8,9 @@ const AppScreen = () => {
   const startScan = async () => {
     setIsScanning(true);
     const response = await fetch('http://localhost:3001/api/getIps');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
     const data = await response.json();
     setScanResults(data);
     setIsScanning(false);
