@@ -1,13 +1,14 @@
 /* eslint-disable no-unused-expressions */
+import { exec } from 'child_process';
 import { execSync } from 'child_process';
 import { writeFileSync } from 'fs';
 import { performNmapScan } from './perform_nmap_scan';
 
-interface IpMacPair {
+export type IpMacPair = {
   ip: string;
   mac: string;
   serviceInfo: string;
-}
+};
 
 async function getIps(): Promise<IpMacPair[]> {
   const pairs: IpMacPair[] = [];
@@ -19,9 +20,12 @@ async function getIps(): Promise<IpMacPair[]> {
       const ip: string = parts[1].replace(/[()]/g, '');
       const ipParts: string[] = ip.split('.');
       if (ipParts[3].length !== 3) {
-        const mac: string = parts[3];
-        const serviceInfo: string = await performNmapScan(ip);
-        pairs.push({ ip, mac, serviceInfo });
+        // 既に同じ IP の要素が存在するか確認
+        if (!pairs.some(pair => pair.ip === ip)) {
+          const mac: string = parts[3];
+          const serviceInfo: string = await performNmapScan(ip);
+          pairs.push({ ip, mac, serviceInfo });
+        }
       }
     }
   }

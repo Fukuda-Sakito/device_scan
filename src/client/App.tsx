@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import ScanResults from './ScanResults';
-import AppScreen from './design';
+import AppScreen from './AppScreen';
 
 function App() {
   return (
