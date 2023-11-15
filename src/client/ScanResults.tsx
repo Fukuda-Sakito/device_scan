@@ -17,7 +17,7 @@ const ScanResults: React.FC<ScanResultsProps> = ({ scanResultsProps }) => {
   };
 
   return (
-    <div>
+    <div className="flex justify-center items-center h-screen bg-gradient-to-r from-purple-500 to-pink-500">
       <h1>Scan Results</h1>
       <button onClick={startScan} disabled={isLoading}>
         {isLoading ? 'Scanning...' : 'Start'}
