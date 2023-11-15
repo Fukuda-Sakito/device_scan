@@ -1,19 +1,27 @@
 import React, { useState } from 'react';
 import ScanResults from './ScanResults';
+import { IpMacPair } from '../scripts/get_ips'; // Import IpMacPair type
 
 const AppScreen = () => {
   const [isScanning, setIsScanning] = useState(false);
-  const [scanResults, setScanResults] = useState([]);
+  const [scanResults, setScanResults] = useState<IpMacPair[]>([]); // Specify the type of scanResults
+
+  const getLocalIps = async (): Promise<IpMacPair[]> => {
+    const response = await fetch('src/ips.json');
+    const pairs: IpMacPair[] = await response.json();
+    return pairs;
+  };
 
   const startScan = async () => {
     setIsScanning(true);
-    const response = await fetch('http://localhost:3001/api/getIps');
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+    try {
+      const data = await getLocalIps(); // Use getLocalIps instead of fetch
+      setScanResults(data);
+    } catch (error) {
+      console.error(`Failed to fetch IPs: ${error}`);
+    } finally {
+      setIsScanning(false);
     }
-    const data = await response.json();
-    setScanResults(data);
-    setIsScanning(false);
   };
 
   if (isScanning) {
@@ -25,7 +33,7 @@ const AppScreen = () => {
       <div className="text-center">
         <div className="bg-white bg-opacity-20 rounded-full p-1 inline-block">
           {/* Replace "your-image-path.png" with the actual image path */}
-          <img src="your-image-path.png" alt="Computer Monitor" className="w-64 h-64 object-cover rounded-full" />
+          {/* <img src="your-image-path.png" alt="Computer Monitor" className="w-64 h-64 object-cover rounded-full" /> */}
         </div>
         <h1 className="text-white text-4xl font-bold mt-4">Device Scanner へようこそ</h1>
         <p className="text-white text-opacity-70 mt-2">ネットワークの状態確認しましょう。</p>

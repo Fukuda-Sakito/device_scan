@@ -8,6 +8,7 @@ export type IpMacPair = {
   ip: string;
   mac: string;
   serviceInfo: string;
+  osVersion: string;
 };
 
 async function getIps(): Promise<IpMacPair[]> {
@@ -24,7 +25,7 @@ async function getIps(): Promise<IpMacPair[]> {
         if (!pairs.some(pair => pair.ip === ip)) {
           const mac: string = parts[3];
           const serviceInfo: string = await performNmapScan(ip);
-          pairs.push({ ip, mac, serviceInfo });
+          pairs.push({ ip, mac, serviceInfo, osVersion: ''});
         }
       }
     }

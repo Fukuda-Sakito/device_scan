@@ -1,32 +1,19 @@
-import React, { useState} from 'react';
-import { IpMacPair, getIps } from '../scripts/get_ips';
+// ScanResults.tsx
+
+import React from 'react';
+import DeviceCard from './DeviceCard';
+import { IpMacPair } from '../scripts/get_ips'; // Import IpMacPair type
 
 interface ScanResultsProps {
   scanResultsProps: IpMacPair[];
 }
 
 const ScanResults: React.FC<ScanResultsProps> = ({ scanResultsProps }) => {
-  const [scanResults, setScanResults] = useState<IpMacPair[]>(scanResultsProps);
-  const [isLoading, setIsLoading] = useState(false);
-
-  const startScan = async () => {
-    setIsLoading(true);
-    const results = await getIps();
-    setScanResults(results);
-    setIsLoading(false);
-  };
-
   return (
-    <div>
-      <h1>Scan Results</h1>
-      <button onClick={startScan} disabled={isLoading}>
-        {isLoading ? 'Scanning...' : 'Start'}
-      </button>
-      {isLoading ? (
-        <p>Loading...</p>
-      ) : (
-        <pre>{JSON.stringify(scanResults, null, 2)}</pre>
-      )}
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 bg-gradient-to-r from-purple-500 to-pink-500">
+      {scanResultsProps.map((pair, index) => (
+        <DeviceCard key={index} pair={pair} /> // Change 'device' to 'pair'
+      ))}
     </div>
   );
 };
