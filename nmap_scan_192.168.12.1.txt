@@ -1,0 +1,59 @@
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-11-15 13:13 JST
+Nmap scan report for 192.168.12.1
+Host is up (0.0042s latency).
+Not shown: 995 closed tcp ports (conn-refused)
+PORT    STATE    SERVICE      VERSION
+23/tcp  open     telnet       Enterasys XSR Security Router telnetd
+80/tcp  open     http         Router
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.0 400 Bad request
+|     Date: Wed, 15 Nov 2023 13:18:21 GMT
+|     Expires: Wed, 15 Nov 2023 13:18:21 GMT
+|     Server: Router
+|     Allow: HEAD, GET, POST
+|     Content-Type: text/html
+|     X-Frame-Options: SAMEORIGIN
+|_    <!DOCTYPE html><HTML><HEAD><TITLE>Error</TITLE><META HTTP-EQUIV="Pragma" CONTENT="no-cache"><style type='text/css'>* {margin:0; padding:0;}html {background-color:#cfcfcf;}body{ background-color:white; margin: 30px; padding:15px; font-family: meiryo; font-size: 14px;}h1{ color:#2b5fcd; border-bottom:1px solid #c1c1c1; font-size: 23px; padding-bottom: 5px; margin-bottom:10px; font-weight: normal;}body > div { background-color:white; border: 1px solid #c1c1c1; margin:15px 0; padding:15px;}h3{ font-size: 16px; margin-bottom: 20px; font-weight: bold;}.sentence{ margin: 15px; display:flex; display: -webkit-box;}.sentence:before { background-color:#2b5fcd; height:9px; width:9px; content: ''; margin-
+|_http-server-header: Router
+135/tcp filtered msrpc
+139/tcp filtered netbios-ssn
+445/tcp filtered microsoft-ds
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.94%I=7%D=11/15%Time=65544564%P=arm-apple-darwin22.4.0%r(
+SF:GetRequest,44A,"HTTP/1\.0\x20400\x20Bad\x20request\r\nDate:\x20Wed,\x20
+SF:15\x20Nov\x202023\x2013:18:21\x20GMT\r\nExpires:\x20Wed,\x2015\x20Nov\x
+SF:202023\x2013:18:21\x20GMT\r\nServer:\x20Router\r\nAllow:\x20HEAD,\x20GE
+SF:T,\x20POST\r\nContent-Type:\x20text/html\r\nX-Frame-Options:\x20SAMEORI
+SF:GIN\r\n\r\n<!DOCTYPE\x20html><HTML><HEAD><TITLE>Error</TITLE><META\x20H
+SF:TTP-EQUIV=\"Pragma\"\x20CONTENT=\"no-cache\"><style\x20type='text/css'>
+SF:\*\x20{margin:0;\x20padding:0;}html\x20{background-color:#cfcfcf;}body{
+SF:\tbackground-color:white;\tmargin:\x2030px;\tpadding:15px;\tfont-family
+SF::\x20meiryo;\tfont-size:\x2014px;}h1{\tcolor:#2b5fcd;\tborder-bottom:1p
+SF:x\x20solid\x20#c1c1c1;\tfont-size:\x2023px;\tpadding-bottom:\x205px;\tm
+SF:argin-bottom:10px;\tfont-weight:\x20normal;}body\x20>\x20div\x20{\tback
+SF:ground-color:white;\tborder:\x201px\x20solid\x20#c1c1c1;\tmargin:15px\x
+SF:200;\tpadding:15px;}h3{\tfont-size:\x2016px;\tmargin-bottom:\x2020px;\t
+SF:font-weight:\x20bold;}\.sentence{\tmargin:\x2015px;\tdisplay:flex;\tdis
+SF:play:\x20-webkit-box;}\.sentence:before\x20{\tbackground-color:#2b5fcd;
+SF:\theight:9px;\twidth:9px;\tcontent:\x20'';\tmargin-")%r(HTTPOptions,44A
+SF:,"HTTP/1\.0\x20400\x20Bad\x20request\r\nDate:\x20Wed,\x2015\x20Nov\x202
+SF:023\x2013:18:21\x20GMT\r\nExpires:\x20Wed,\x2015\x20Nov\x202023\x2013:1
+SF:8:21\x20GMT\r\nServer:\x20Router\r\nAllow:\x20HEAD,\x20GET,\x20POST\r\n
+SF:Content-Type:\x20text/html\r\nX-Frame-Options:\x20SAMEORIGIN\r\n\r\n<!D
+SF:OCTYPE\x20html><HTML><HEAD><TITLE>Error</TITLE><META\x20HTTP-EQUIV=\"Pr
+SF:agma\"\x20CONTENT=\"no-cache\"><style\x20type='text/css'>\*\x20{margin:
+SF:0;\x20padding:0;}html\x20{background-color:#cfcfcf;}body{\tbackground-c
+SF:olor:white;\tmargin:\x2030px;\tpadding:15px;\tfont-family:\x20meiryo;\t
+SF:font-size:\x2014px;}h1{\tcolor:#2b5fcd;\tborder-bottom:1px\x20solid\x20
+SF:#c1c1c1;\tfont-size:\x2023px;\tpadding-bottom:\x205px;\tmargin-bottom:1
+SF:0px;\tfont-weight:\x20normal;}body\x20>\x20div\x20{\tbackground-color:w
+SF:hite;\tborder:\x201px\x20solid\x20#c1c1c1;\tmargin:15px\x200;\tpadding:
+SF:15px;}h3{\tfont-size:\x2016px;\tmargin-bottom:\x2020px;\tfont-weight:\x
+SF:20bold;}\.sentence{\tmargin:\x2015px;\tdisplay:flex;\tdisplay:\x20-webk
+SF:it-box;}\.sentence:before\x20{\tbackground-color:#2b5fcd;\theight:9px;\
+SF:twidth:9px;\tcontent:\x20'';\tmargin-");
+Service Info: Device: router
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 169.97 seconds
