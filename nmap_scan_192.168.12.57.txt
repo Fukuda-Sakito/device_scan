@@ -1,13 +1,12 @@
-Starting Nmap 7.94 ( https://nmap.org ) at 2023-12-10 17:42 JST
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-12-10 20:37 JST
 Nmap scan report for 192.168.12.57
-Host is up (0.0055s latency).
-Not shown: 994 closed tcp ports (conn-refused)
+Host is up (0.0063s latency).
+Not shown: 995 closed tcp ports (conn-refused)
 PORT      STATE SERVICE       VERSION
 22/tcp    open  ssh           OpenSSH 9.4 (protocol 2.0)
 | ssh-hostkey: 
 |   256 38:41:4a:91:54:6c:03:ef:da:88:35:fa:75:75:03:d8 (ECDSA)
 |_  256 53:01:4e:30:28:6e:b3:fa:f7:d8:09:94:7c:ef:f4:3e (ED25519)
-88/tcp    open  tcpwrapped
 445/tcp   open  microsoft-ds?
 5000/tcp  open  rtsp          AirTunes rtspd 745.13.4
 |_rtsp-methods: ERROR: Script execution failed (use -d to debug)
@@ -19,7 +18,7 @@ PORT      STATE SERVICE       VERSION
 Host script results:
 |_clock-skew: -30s
 | smb2-time: 
-|   date: 2023-12-10T08:42:34
+|   date: 2023-12-10T11:37:14
 |_  start_date: N/A
 | smb2-security-mode: 
 |   3:0:2: 
@@ -27,4 +26,4 @@ Host script results:
 |_nbstat: NetBIOS name: DUGONGIDAE, NetBIOS user: <unknown>, NetBIOS MAC: 9c:76:0e:57:f9:ea (Apple)
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 37.80 seconds
+Nmap done: 1 IP address (1 host up) scanned in 38.01 seconds

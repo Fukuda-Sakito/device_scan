@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import ScanResults from './ScanResults';
+import { scanNetwork } from '../scripts/scan';
+import fs from 'fs';
 
 const AppScreen = () => {
   const [isScanning, setIsScanning] = useState(false);
@@ -8,11 +10,8 @@ const AppScreen = () => {
   const startScan = async () => {
     setIsScanning(true);
     const response = await fetch('http://localhost:3001/api/getIps');
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
-    setScanResults(data);
+    const results = await response.json();
+    setScanResults(results);
     setIsScanning(false);
   };
 
