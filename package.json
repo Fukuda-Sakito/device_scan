@@ -18,7 +18,7 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "tailwindcss": "^3.3.5",
-    "typescript": "^4.4.2",
+    "typescript": "^5.3.3",
     "web-vitals": "^2.1.0",
     "yarn": "^1.22.19"
   },
@@ -52,7 +52,7 @@
     "@types/express": "^4.17.21",
     "ts-node": "^10.9.1"
   },
-  "browser":{
+  "browser": {
     "child_process": false,
     "fs": false
   }

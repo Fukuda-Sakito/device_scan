@@ -44,3 +44,18 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## シーケンス図
+### 最初の実行
+```mermaid
+sequenceDiagram
+    User->>+Scanner: "スタート" ボタンクリック
+    Scanner->>Scanner: "src/scripts/result.json" と "src/scripts/ips.txt" を初期化
+    Scanner->>Scanner: `arp -a` コマンドの実行結果を重複なく "arc/scripts/ips.txt" に書き込む
+    Scanner-->>-User: ips.txt の行数が画面に出力される
+    Scanner->>Scanner: `nmap -sV -T4 -iL src/scripts/ips.txt` を実行。
+    Scanner->>Scanner: 実行結果から Device name, ip, OS version, MAC address の4つの情報を抽出し、"src/scripts/result.json" に書き込む。
+    Scanner-->>User: 実行完了したら、デバイス名の一覧を画面に表示
+```
+
+### デバイス詳細の表示

@@ -1,13 +1,13 @@
-Starting Nmap 7.94 ( https://nmap.org ) at 2023-11-15 13:16 JST
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-12-10 17:35 JST
 Nmap scan report for 192.168.12.11
-Host is up (0.0096s latency).
+Host is up (0.0039s latency).
 Not shown: 993 closed tcp ports (conn-refused)
 PORT     STATE SERVICE      VERSION
 80/tcp   open  http         EPSON-HTTP/1.0
 | fingerprint-strings: 
 |   FourOhFourRequest: 
 |     HTTP/1.1 301 Moved Permanently
-|     Date: Wed, 15 Nov 2023 04:04:01 GMT
+|     Date: Sun, 10 Dec 2023 08:10:28 GMT
 |     Server: EPSON-HTTP/1.0
 |     Content-Type: text/html
 |     Content-Length: 78
@@ -15,12 +15,12 @@ PORT     STATE SERVICE      VERSION
 |     192.168.12.11Moved</TITLE></HEAD><BODY><A HREF="https://ebak">Moved</A></BODY>
 |   GenericLines: 
 |     HTTP/1.1 400 Bad Request
-|     Date: Wed, 15 Nov 2023 04:04:01 GMT
+|     Date: Sun, 10 Dec 2023 08:10:28 GMT
 |     Server: EPSON-HTTP/1.0
 |     Content-Length: 0
 |   GetRequest, HTTPOptions, RTSPRequest: 
 |     HTTP/1.1 301 Moved Permanently
-|     Date: Wed, 15 Nov 2023 04:03:56 GMT
+|     Date: Sun, 10 Dec 2023 08:10:23 GMT
 |     Server: EPSON-HTTP/1.0
 |     Content-Type: text/html
 |     Content-Length: 74
@@ -28,24 +28,23 @@ PORT     STATE SERVICE      VERSION
 |     192.168.12.11Moved</TITLE></HEAD><BODY><A HREF="https://">Moved</A></BODY>
 |   SIPOptions: 
 |     HTTP/1.1 400 Bad Request
-|     Date: Wed, 15 Nov 2023 04:05:04 GMT
+|     Date: Sun, 10 Dec 2023 08:11:31 GMT
 |     Server: EPSON-HTTP/1.0
 |_    Content-Length: 0
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
 |_ms-sql-info: ERROR: Script execution failed (use -d to debug)
 |_http-server-header: EPSON-HTTP/1.0
-|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
 139/tcp  open  netbios-ssn?
 |_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
 |_ms-sql-info: ERROR: Script execution failed (use -d to debug)
-443/tcp  open  ssl/https    EPSON-HTTP/1.0
-|_ssl-date: 2023-11-15T04:07:11+00:00; -12m16s from scanner time.
+443/tcp  open  ssl/https?
+|_http-title: EpsonNet Config
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ssl-date: 2023-12-10T08:13:43+00:00; -25m10s from scanner time.
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
 | ssl-cert: Subject: commonName=172.21.66.231/organizationName=SEIKO EPSON CORP./countryName=JP
 | Not valid before: 2015-05-12T05:46:04
 |_Not valid after:  2025-05-09T05:46:04
-|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
-|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
-|_http-title: EpsonNet Config
-|_http-server-header: EPSON-HTTP/1.0
 445/tcp  open  microsoft-ds Epson WF-2650 printer smbd
 |_ms-sql-info: ERROR: Script execution failed (use -d to debug)
 |_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
@@ -57,40 +56,40 @@ PORT     STATE SERVICE      VERSION
 |   FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, RTSPRequest, SIPOptions: 
 |     HTTP/1.0 404 not found
 |_    Server: EPSON-HTTP/1.0
-|_http-server-header: EPSON-HTTP/1.0
 |_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_http-server-header: EPSON-HTTP/1.0
 |_ms-sql-info: ERROR: Script execution failed (use -d to debug)
 9100/tcp open  jetdirect?
-|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
 |_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.94%I=7%D=11/15%Time=6554460C%P=arm-apple-darwin22.4.0%r(
-SF:GetRequest,EA,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nDate:\x20Wed
-SF:,\x2015\x20Nov\x202023\x2004:03:56\x20GMT\r\nServer:\x20EPSON-HTTP/1\.0
+SF-Port80-TCP:V=7.94%I=7%D=12/10%Time=65757854%P=arm-apple-darwin22.4.0%r(
+SF:GetRequest,EA,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nDate:\x20Sun
+SF:,\x2010\x20Dec\x202023\x2008:10:23\x20GMT\r\nServer:\x20EPSON-HTTP/1\.0
 SF:\r\nContent-Type:\x20text/html\r\nContent-Length:\x2074\r\nLocation:\x2
 SF:0https://\r\n\r\n192\.168\.12\.11Moved</TITLE></HEAD><BODY><A\x20HREF=\
 SF:"https://\">Moved</A></BODY>")%r(HTTPOptions,EA,"HTTP/1\.1\x20301\x20Mo
-SF:ved\x20Permanently\r\nDate:\x20Wed,\x2015\x20Nov\x202023\x2004:03:56\x2
+SF:ved\x20Permanently\r\nDate:\x20Sun,\x2010\x20Dec\x202023\x2008:10:23\x2
 SF:0GMT\r\nServer:\x20EPSON-HTTP/1\.0\r\nContent-Type:\x20text/html\r\nCon
 SF:tent-Length:\x2074\r\nLocation:\x20https://\r\n\r\n192\.168\.12\.11Move
 SF:d</TITLE></HEAD><BODY><A\x20HREF=\"https://\">Moved</A></BODY>")%r(RTSP
-SF:Request,EA,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nDate:\x20Wed,\x
-SF:2015\x20Nov\x202023\x2004:03:56\x20GMT\r\nServer:\x20EPSON-HTTP/1\.0\r\
+SF:Request,EA,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nDate:\x20Sun,\x
+SF:2010\x20Dec\x202023\x2008:10:23\x20GMT\r\nServer:\x20EPSON-HTTP/1\.0\r\
 SF:nContent-Type:\x20text/html\r\nContent-Length:\x2074\r\nLocation:\x20ht
 SF:tps://\r\n\r\n192\.168\.12\.11Moved</TITLE></HEAD><BODY><A\x20HREF=\"ht
 SF:tps://\">Moved</A></BODY>")%r(FourOhFourRequest,F2,"HTTP/1\.1\x20301\x2
-SF:0Moved\x20Permanently\r\nDate:\x20Wed,\x2015\x20Nov\x202023\x2004:04:01
+SF:0Moved\x20Permanently\r\nDate:\x20Sun,\x2010\x20Dec\x202023\x2008:10:28
 SF:\x20GMT\r\nServer:\x20EPSON-HTTP/1\.0\r\nContent-Type:\x20text/html\r\n
 SF:Content-Length:\x2078\r\nLocation:\x20https://ebak\r\n\r\n192\.168\.12\
 SF:.11Moved</TITLE></HEAD><BODY><A\x20HREF=\"https://ebak\">Moved</A></BOD
 SF:Y>")%r(GenericLines,6C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20
-SF:Wed,\x2015\x20Nov\x202023\x2004:04:01\x20GMT\r\nServer:\x20EPSON-HTTP/1
+SF:Sun,\x2010\x20Dec\x202023\x2008:10:28\x20GMT\r\nServer:\x20EPSON-HTTP/1
 SF:\.0\r\nContent-Length:\x200\r\n\r\n")%r(SIPOptions,6C,"HTTP/1\.1\x20400
-SF:\x20Bad\x20Request\r\nDate:\x20Wed,\x2015\x20Nov\x202023\x2004:05:04\x2
+SF:\x20Bad\x20Request\r\nDate:\x20Sun,\x2010\x20Dec\x202023\x2008:11:31\x2
 SF:0GMT\r\nServer:\x20EPSON-HTTP/1\.0\r\nContent-Length:\x200\r\n\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port631-TCP:V=7.94%I=7%D=11/15%Time=6554460C%P=arm-apple-darwin22.4.0%r
+SF-Port631-TCP:V=7.94%I=7%D=12/10%Time=65757854%P=arm-apple-darwin22.4.0%r
 SF:(GetRequest,32,"HTTP/1\.0\x20404\x20not\x20found\r\nServer:\x20EPSON-HT
 SF:TP/1\.0\r\n\r\n")%r(HTTPOptions,32,"HTTP/1\.0\x20404\x20not\x20found\r\
 SF:nServer:\x20EPSON-HTTP/1\.0\r\n\r\n")%r(GenericLines,32,"HTTP/1\.0\x204
@@ -102,15 +101,15 @@ SF:not\x20found\r\nServer:\x20EPSON-HTTP/1\.0\r\n\r\n");
 Service Info: Device: printer; CPE: cpe:/h:epson:wf-2650
 
 Host script results:
-|_clock-skew: mean: -12m16s, deviation: 0s, median: -12m16s
-|_nbstat: NetBIOS name: EPEDF45F, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+|_smb2-time: Protocol negotiation failed (SMB2)
 | smb-security-mode: 
 |   account_used: guest
 |   authentication_level: user
 |   challenge_response: supported
 |_  message_signing: disabled (dangerous, but default)
-|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
-|_smb2-time: Protocol negotiation failed (SMB2)
+|_clock-skew: mean: -25m10s, deviation: 0s, median: -25m10s
+|_nbstat: NetBIOS name: EPEDF45F, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 204.21 seconds
+Nmap done: 1 IP address (1 host up) scanned in 209.51 seconds
