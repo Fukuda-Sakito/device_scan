@@ -69,3 +69,6 @@ sequenceDiagram
     Scanner->>Scanner: 実行結果から Device name, ip, OS version, MAC address の4つの情報を抽出し、"src/scripts/result.json" に書き込む。
     Scanner-->>User: 実行完了したら、デバイス名の一覧を画面に表示
 ```
+
+# ToDo
+JSON ファイルに実行結果を正しく保存できるようにする。これをやらないとデモ画面も作成できない。
