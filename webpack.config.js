@@ -9,9 +9,10 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
     },
     resolve: {
-        extensions: ['.ts', '.tsx', '.js'],
         fallback: {
-        "path": require.resolve("path-browserify")
+            "path": require.resolve("path-browserify"),
+            "fs": false,
+            "child_process": false
         }
     },
     module: {
