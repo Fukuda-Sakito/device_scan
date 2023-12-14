@@ -20,7 +20,7 @@ const AppScreen = () => {
   }
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gradient-to-r from-purple-500 to-pink-500">
+    <div className="flex justify-center items-center h-screen bg-gradient-to-r from-indigo-500 to-blue-500">
       <div className="text-center">
         <div className="bg-white bg-opacity-20 rounded-full p-1 inline-block">
           {/* <img src="./images/NETWORK_NBG.png" alt="Computer Monitor" className="w-64 h-64 object-cover rounded-full" /> */}
