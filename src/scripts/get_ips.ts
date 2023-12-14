@@ -9,28 +9,30 @@ export type IpMacPair = {
   serviceInfo: string;
 };
 
-async function getIps(): Promise<string[]> {
-  const ips: string[] = [];
+async function getIps(): Promise<IpMacPair[]> {
+  const ipMacPairs: IpMacPair[] = [];
   const arpOutput: string = execSync('arp -a').toString();
 
   for (const line of arpOutput.split('\n')) {
     const parts: string[] = line.split(' ');
-    if (parts.length > 1) {
+    if (parts.length > 3) {
       const ip: string = parts[1].replace(/[()]/g, '');
+      const mac: string = parts[3];
+      const serviceInfo: string = parts[0];
       // 既に同じ IP の要素が存在するか確認
-      if (!ips.includes(ip)) {
-        ips.push(ip);
+      if (!ipMacPairs.some(pair => pair.ip === ip)) {
+        ipMacPairs.push({ ip, mac, serviceInfo });
       }
     }
   }
 
-  return ips;
+  return ipMacPairs;
 }
 
 if (require.main === module) {
-  getIps().then(ips => {
+  getIps().then(ipMacPairs => {
     // JSON 形式でファイルに保存
-    writeFileSync(path.join(__dirname, '../scripts/result.json'), JSON.stringify(ips, null, 2));
+    writeFileSync(path.join(__dirname, '../scripts/result.json'), JSON.stringify(ipMacPairs, null, 2));
   });
 }
 
