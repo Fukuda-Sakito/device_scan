@@ -32,7 +32,8 @@ async function getIps(): Promise<IpMacPair[]> {
 if (require.main === module) {
   getIps().then(ipMacPairs => {
     // JSON 形式でファイルに保存
-    writeFileSync(path.join(__dirname, '../scripts/result.json'), JSON.stringify(ipMacPairs, null, 2));
+    writeFileSync('../scripts/result.json', JSON.stringify(ipMacPairs, null, 2));
+    // writeFileSync(path.join(__dirname, '../scripts/result.json'), JSON.stringify(ipMacPairs, null, 2));
   });
 }
 
