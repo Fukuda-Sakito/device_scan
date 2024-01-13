@@ -23,6 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # results
-nmap_scan_*
-src/scripts/result.json
+src/scripts/
 src/scripts/results/
+nmap_scan_*.txt
