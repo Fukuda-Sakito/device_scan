@@ -4,7 +4,7 @@ import path from 'path';
 
 export function performNmapScan(ip: string): Promise<string> {
   return new Promise((resolve, reject) => {
-    const command = `nmap -A ${ip}`;
+    const command = `sudo nmap -O -T5 -iL ./results/ips.txt`;
     exec(command, (error, stdout, stderr) => {
       if (error) {
         console.error(`exec error: ${error}`);

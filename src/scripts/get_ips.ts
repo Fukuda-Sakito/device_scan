@@ -27,9 +27,16 @@ async function getIps(): Promise<IpMacPair[]> {
   console.log(ipMacPairs);  // for debug
   // JSON 形式でファイルに保存
   // Get the absolute path to the result.json file
-  const resultPath = path.join(__dirname, './results/result.json');
+  const resultPath = path.join(__dirname, 'results/result.json');
   // Use the absolute path when reading/writing the file
+  // console.log(__dirname);  // for debug
+  // console.log(resultPath);  // for debug
   writeFileSync(resultPath, JSON.stringify(ipMacPairs, null, 2));
+
+  const ipList = ipMacPairs.map(pair => pair.ip).join('\n');
+  const ipPath = path.join(__dirname, 'results/ips.txt');
+  // その文字列を ips.txt に書き込み
+  writeFileSync(ipPath, ipList);
 
   return ipMacPairs;
 }
