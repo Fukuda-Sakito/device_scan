@@ -19,22 +19,23 @@ async function getIps(): Promise<IpMacPair[]> {
       const ip: string = parts[1].replace(/[()]/g, '');
       const mac: string = parts[3];
       const serviceInfo: string = parts[0];
-      // 既に同じ IP の要素が存在するか確認
       if (!ipMacPairs.some(pair => pair.ip === ip)) {
         ipMacPairs.push({ ip, mac, serviceInfo });
       }
     }
   }
+  console.log(ipMacPairs);  // for debug
+  // JSON 形式でファイルに保存
+  // Get the absolute path to the result.json file
+  const resultPath = path.join(__dirname, './results/result.json');
+  // Use the absolute path when reading/writing the file
+  writeFileSync(resultPath, JSON.stringify(ipMacPairs, null, 2));
 
   return ipMacPairs;
 }
 
 if (require.main === module) {
-  getIps().then(ipMacPairs => {
-    // JSON 形式でファイルに保存
-    writeFileSync('../scripts/result.json', JSON.stringify(ipMacPairs, null, 2));
-    // writeFileSync(path.join(__dirname, '../scripts/result.json'), JSON.stringify(ipMacPairs, null, 2));
-  });
+  getIps();
 }
 
 export { getIps };

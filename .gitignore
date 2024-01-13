@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# results
+nmap_scan_*
+src/scripts/result.json
+src/scripts/results/

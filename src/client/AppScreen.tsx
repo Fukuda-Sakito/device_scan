@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ScanResults from './ScanResults';
 import { scanNetwork } from '../scripts/scan';
 import fs from 'fs';
@@ -9,11 +9,15 @@ const AppScreen = () => {
 
   const startScan = async () => {
     setIsScanning(true);
-    const response = await fetch('http://localhost:3001/api/getIps');
+    const response = await fetch('http://localhost:3001/');
     const results = await response.json();
     setScanResults(results);
     setIsScanning(false);
   };
+
+  useEffect(() => {
+    startScan();
+  }, []); // Empty dependency array means this effect runs once on component mount
 
   if (isScanning) {
     return <ScanResults scanResultsProps={scanResults} />;

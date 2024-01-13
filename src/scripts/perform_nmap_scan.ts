@@ -1,5 +1,6 @@
 import { exec } from 'child_process';
 import { writeFileSync } from 'fs';
+import path from 'path';
 
 export function performNmapScan(ip: string): Promise<string> {
   return new Promise((resolve, reject) => {
@@ -10,8 +11,11 @@ export function performNmapScan(ip: string): Promise<string> {
         return reject(error);
       }
 
-      const filename = `nmap_scan_${ip}.txt`;
-      writeFileSync(filename, stdout);
+      // JSON 形式でファイルに保存
+      // Get the absolute path to the result.json file
+      const resultPath = path.join(__dirname, `./results/nmap_scan_${ip}.txt`);
+      // Use the absolute path when reading/writing the file
+      writeFileSync(resultPath, stdout);
 
       const match = stdout.match(/Service Info: Device: (.*?);/);
       const serviceInfo = match ? match[1] : '一般';
