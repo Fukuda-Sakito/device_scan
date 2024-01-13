@@ -7,17 +7,20 @@ const AppScreen = () => {
   const [isScanning, setIsScanning] = useState(false);
   const [scanResults, setScanResults] = useState([]);
 
-  const startScan = async () => {
-    setIsScanning(true);
-    const response = await fetch('http://localhost:3001/');
-    const results = await response.json();
-    setScanResults(results);
-    setIsScanning(false);
-  };
-
   useEffect(() => {
-    startScan();
+    fetch('http://localhost:3001/')
+      .then(response => response.json())
+      .then(results => {
+        setScanResults(results);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
   }, []); // Empty dependency array means this effect runs once on component mount
+
+  const startScan = () => {
+    setIsScanning(true);
+  };
 
   if (isScanning) {
     return <ScanResults scanResultsProps={scanResults} />;
