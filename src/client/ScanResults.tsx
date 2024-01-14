@@ -1,5 +1,6 @@
 import React, { useState} from 'react';
 import { IpMacPair, getIps } from '../scripts/get_ips';
+import IpMacPairCard from './IpMacPairCard';
 
 interface ScanResultsProps {
   scanResultsProps: IpMacPair[];
@@ -27,8 +28,12 @@ const ScanResults: React.FC<ScanResultsProps> = ({ scanResultsProps }) => {
       ) : (
         <pre>{JSON.stringify(scanResults, null, 2)}</pre>
       )}
+      <div className="flex flex-wrap justify-center">
+      {scanResults.map((result, index) => (
+        <IpMacPairCard key={index} serviceInfo={result.serviceInfo} image={result.image} />
+        // <IpMacPairCard key={index} serviceInfo={result.serviceInfo} image={result.image} />
+      ))}
+      </div>
     </div>
   );
 };
-
-export default ScanResults;
