@@ -1,8 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; // useEffectをインポート
+import axios from 'axios'; // axiosをインポート
 import ScanResults from './ScanResults';
 
 const AppScreen = () => {
   const [isScanning, setIsScanning] = useState(false);
+
+  useEffect(() => {
+    axios.get('http://localhost:3001/')
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }, []);
 
   const startScan = () => {
     setIsScanning(true);
