@@ -24,5 +24,5 @@ yarn-error.log*
 
 # results
 src/scripts/
-src/scripts/results/
+src/scripts/results/**
 nmap_scan_*.txt
