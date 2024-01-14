@@ -27,7 +27,7 @@ const ScanResults = () => {
   return (
     <div className="flex justify-center h-screen bg-gradient-to-r from-indigo-500 to-sky-500 flex-wrap">
       <div className="text-center w-full mt-4">
-        <h1 className='text-white'>接続デバイス</h1>
+        <h1 className='text-white text-4xl'>接続デバイス</h1> {/* ここを変更 */}
       </div>
       {results && results.map((result, index) => (
         <IpMacPairCard key={index} ip={result.ip} mac={result.mac} />
