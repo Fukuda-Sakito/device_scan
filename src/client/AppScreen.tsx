@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ScanResults from './ScanResults';
-import { scanNetwork } from '../scripts/scan';
+import { scanNetwork } from '../scripts/return';
 import fs from 'fs';
 
 const AppScreen = () => {
