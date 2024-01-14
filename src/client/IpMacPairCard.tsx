@@ -1,15 +1,15 @@
-// import React from 'react';
+interface IpMacPairCardProps {
+    ip: string;
+    mac: string;
+}
 
-// const IpMacPairCard = ({ serviceInfo, image }) => {
-//   return (
-//     <div className="rounded-lg shadow-lg p-4 m-2 flex flex-col items-center">
-//       <img src={image} alt="Service" className="w-16 h-16 mb-4" />
-//       <div className="text-center">
-//         <p className="font-bold">{serviceInfo.ip}</p>
-//         <p>{serviceInfo.mac}</p>
-//       </div>
-//     </div>
-//   );
-// };
+const IpMacPairCard: React.FC<IpMacPairCardProps> = ({ ip, mac }) => {
+    return (
+        <div className="m-2 w-1/6 p-4 bg-gradient-to-r from-indigo-700 to-sky-700 rounded-lg shadow-lg flex flex-col items-center justify-center space-y-2">
+            <p className="text-white text-center">{ip}</p>
+            <p className="text-white text-center">{mac}</p>
+        </div>
+    );
+};
 
-// export default IpMacPairCard;
+export default IpMacPairCard;

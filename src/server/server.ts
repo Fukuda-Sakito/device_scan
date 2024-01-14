@@ -1,13 +1,13 @@
 import express from 'express';
-import cors from 'cors'; // Add this line
+import cors from 'cors';
 import { getIps } from '../scripts/get_ips';
 import { nmapScan, countIPs } from '../scripts/nmap_scan';
+import fs from 'fs';
+import path from 'path';
 
 const app = express();
+app.use(cors());
 
-app.use(cors()); // Add this line
-
-// const port = 3000;
 const port = 3001;
 
 app.get('/', async (req, res) => {
@@ -17,7 +17,8 @@ app.get('/', async (req, res) => {
 
 app.get('/api/nmap', async (req, res) => {
   const ipCount = await countIPs();
-  res.json({ ipCount });
+  const data = JSON.parse(fs.readFileSync(path.join(__dirname, '../scripts/results/result.json'), 'utf-8'));
+  res.json({ ipCount, data });
 });
 
 app.listen(port, () => {
