@@ -4,7 +4,7 @@ import { writeFileSync, readFileSync, readFile } from 'fs';
 
 export function nmapScan(): Promise<void> {
   return new Promise<void>((resolve, reject) => {
-    const command = 'sudo nmap -O -T5 -iL results/ips.txt';
+    const command = 'nmap --privileged -A -T5 -iL results/ips.txt -oX results/result_nmap.xml';
 
     exec(command, (error, stdout, stderr) => {
       if (error) {
