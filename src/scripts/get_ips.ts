@@ -16,6 +16,8 @@ export async function getIps(): Promise<IpMacPair[]> {
   const ipMacPairs: IpMacPair[] = [];
   const arpOutput: string = execSync('arp -a').toString();
 
+  let ipsTxtContent = '';  // ips.txtに書き込む内容を保持する変数
+
   for (const line of arpOutput.split('\n')) {
     const parts: string[] = line.split(' ');
     if (parts.length > 3) {
@@ -27,14 +29,18 @@ export async function getIps(): Promise<IpMacPair[]> {
       const type: string = "unknown";  // typeの値を設定します。適切な値に修正してください。
       if (!ipMacPairs.some(pair => pair.ip === ip)) {
         ipMacPairs.push({ ip, mac, serviceInfo, OS, vendor, type });
+        ipsTxtContent += `${ip}\n`;  // ips.txtに書き込む内容を追加
       }
     }
   }
+
+  // ips.txt ファイルに書き込み
+  const ipsTxtPath = path.join(__dirname, 'results/ips.txt');
+  writeFileSync(ipsTxtPath, ipsTxtContent);
+
   console.log(JSON.stringify(ipMacPairs, null, 2));  // for debug
   // JSON 形式でファイルに保存
-  // Get the absolute path to the result.json file
   const resultPath = path.join(__dirname, 'results/result.json');
-  // Use the absolute path when reading/writing the file
   writeFileSync(resultPath, JSON.stringify(ipMacPairs, null, 2));
 
   return ipMacPairs;

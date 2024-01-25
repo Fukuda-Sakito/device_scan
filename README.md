@@ -70,5 +70,11 @@ sequenceDiagram
     Scanner-->>User: 実行完了したら、デバイス名の一覧を画面に表示
 ```
 
-# ToDo
-JSON ファイルに実行結果を正しく保存できるようにする。これをやらないとデモ画面も作成できない。
+## 事前準備
+### Nmap 実行
+1. `yarn start` 実行し、起動完了後に以下のコマンドを実行。その際、パスワードを求められすため、デバイスのロックを解除するときと同じパスコードを入力し、エンターキーを押下。(入力中の値は見えないが入力できている)
+```
+sudo nmap -O -T4 -iL src/scripts/results/ips.txt -oX src/scripts/results/results_nmap_O.xml
+```
+
+2. 

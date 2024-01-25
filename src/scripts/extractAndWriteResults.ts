@@ -1,24 +1,27 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as glob from 'glob';
+import { parseStringPromise } from 'xml2js';
 
-// 結果を保存するオブジェクト
-let results: {[key: string]: {os_version: string, developer: string, service_name: string}} = {};
+let results: {[key: string]: {os: string, vendor: string, service_name: string}} = {};
 
-// src/scripts/results_result_* ファイルを読み込む
-glob.sync('src/scripts/results_result_*').forEach((filename) => {
+glob.sync('src/scripts/results/results_*').forEach(async (filename) => {
     const data = fs.readFileSync(filename, 'utf-8');
-    // ファイルから情報を抽出（この部分は実際のファイルの内容に合わせて修正が必要）
-    const [os_version, developer, service_name] = data.split('\n');
+    const xml = await parseStringPromise(data);
+    const hostints = xml.nmaprun.host;
 
-    // IPアドレスをキーとして情報を保存
-    const ip = path.basename(filename).replace('results_result_', '');
-    results[ip] = {
-        os_version: os_version.trim(),
-        developer: developer.trim(),
-        service_name: service_name.trim(),
-    };
+    hostints.forEach((hostint: any) => {
+        const ip = hostint.address[0].$.addr;
+        const os = hostint.os[0].osmatch[0].$.name;
+        const vendor = hostint.address[0].$.vendor;
+        const service_name = hostint.ports[0].port[0].service[0].$.name;
+
+        results[ip] = {
+            os: os,
+            vendor: vendor,
+            service_name: service_name,
+        };
+    });
 });
 
-// 結果を src/scripts/result.json に書き込む
 fs.writeFileSync('src/scripts/results/result.json', JSON.stringify(results));

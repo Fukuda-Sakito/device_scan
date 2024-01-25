@@ -4,7 +4,7 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 # 出力ファイルを初期化
-> $DIR/results/result_dig.txt
+> $DIR/results/results_dig.txt
 
 # results/ips.txt の各行に対して dig コマンドを実行
 while read ip; do
