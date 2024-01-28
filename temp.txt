@@ -1,84 +1,315 @@
-<address addr="00:60:B9:A4:E1:C2" addrtype="mac" vendor="NEC Platforms"/>
-<address addr="B4:E6:2D:6A:F7:B1" addrtype="mac" vendor="Espressif"/>
-<address addr="30:FD:38:07:75:44" addrtype="mac" vendor="Google"/>
-<address addr="00:60:B9:A4:E1:C2" addrtype="mac" vendor="NEC Platforms"/>
-<osmatch name="Teldat K series gateway" accuracy="87" line="102178">
-<osclass type="broadband router" vendor="Teldat" osfamily="embedded" accuracy="87"/>
-</osmatch>
-<osmatch name="D-Link DPR-1260 print server; or DGL-4300, DGL-4500, DIR-615, DIR-625, DIR-628, DIR-655, or DIR-855 WAP" accuracy="85" line="19997">
-<osclass type="print server" vendor="D-Link" osfamily="embedded" accuracy="85"><cpe>cpe:/h:dlink:dpr-1260</cpe></osclass>
-<osclass type="WAP" vendor="D-Link" osfamily="embedded" accuracy="85"><cpe>cpe:/h:dlink:dgl-4300</cpe><cpe>cpe:/h:dlink:dgl-4500</cpe><cpe>cpe:/h:dlink:dir-615</cpe><cpe>cpe:/h:dlink:dir-625</cpe><cpe>cpe:/h:dlink:dir-628</cpe><cpe>cpe:/h:dlink:dir-655</cpe><cpe>cpe:/h:dlink:dir-855</cpe></osclass>
-</osmatch>
-<address addr="B4:E6:2D:6A:F7:B1" addrtype="mac" vendor="Espressif"/>
-<osmatch name="NodeMCU firmware (lwIP stack)" accuracy="98" line="89123">
-<osclass type="specialized" vendor="NodeMCU" osfamily="embedded" accuracy="98"><cpe>cpe:/o:nodemcu:nodemcu</cpe></osclass>
-<osclass type="general purpose" vendor="lwIP" osfamily="lwIP" accuracy="98"><cpe>cpe:/a:lwip_project:lwip</cpe></osclass>
-</osmatch>
-<osmatch name="Espressif esp8266 firmware (lwIP stack)" accuracy="95" line="24709">
-<osclass type="specialized" vendor="Espressif" osfamily="embedded" accuracy="95"/>
-<osclass type="general purpose" vendor="lwIP" osfamily="lwIP" accuracy="95"><cpe>cpe:/a:lwip_project:lwip</cpe></osclass>
-</osmatch>
-<osmatch name="ESPEasy OS (lwIP stack)" accuracy="94" line="68879">
-<osclass type="specialized" vendor="lwIP" osfamily="lwIP" accuracy="94"><cpe>cpe:/a:lwip_project:lwip</cpe></osclass>
-</osmatch>
-<osmatch name="Enlogic PDU (FreeRTOS/lwIP)" accuracy="92" line="24220">
-<osclass type="specialized" vendor="Enlogic" osfamily="embedded" accuracy="92"/>
-<osclass type="specialized" vendor="lwIP" osfamily="lwIP" accuracy="92"><cpe>cpe:/a:lwip_project:lwip</cpe></osclass>
-</osmatch>
-<osmatch name="DTE Energy Bridge (lwIP stack)" accuracy="91" line="23511">
-<osclass type="specialized" vendor="DTE" osfamily="embedded" accuracy="91"/>
-<osclass type="specialized" vendor="lwIP" osfamily="lwIP" accuracy="91"><cpe>cpe:/a:lwip_project:lwip</cpe></osclass>
-</osmatch>
-<osmatch name="Philips Hue Bridge (lwIP stack v1.4.0)" accuracy="91" line="93284">
-<osclass type="specialized" vendor="Philips" osfamily="embedded" accuracy="91"><cpe>cpe:/h:philips:hue_bridge</cpe></osclass>
-<osclass type="general purpose" vendor="lwIP" osfamily="lwIP" osgen="1.4.X" accuracy="91"><cpe>cpe:/a:lwip_project:lwip:1.4</cpe></osclass>
-</osmatch>
-<osmatch name="Rigol DSG3060 signal generator" accuracy="91" line="95202">
-<osclass type="specialized" vendor="Rigol Technologies" osfamily="embedded" accuracy="91"><cpe>cpe:/h:rigol_technologies:dsg3060</cpe></osclass>
-</osmatch>
-<osmatch name="OSRAM Lightify ZigBee gateway" accuracy="90" line="92546">
-<osclass type="specialized" vendor="OSRAM" osfamily="embedded" accuracy="90"><cpe>cpe:/h:osram:lightify</cpe></osclass>
-</osmatch>
-<osmatch name="2N Helios IP VoIP doorbell" accuracy="89" line="47">
-<osclass type="specialized" vendor="2N" osfamily="embedded" accuracy="89"><cpe>cpe:/h:2n:helios</cpe></osclass>
-</osmatch>
-<osmatch name="Philips Hue Bridge (lwIP stack)" accuracy="89" line="93405">
-<osclass type="specialized" vendor="Philips" osfamily="embedded" accuracy="89"><cpe>cpe:/h:philips:hue_bridge</cpe></osclass>
-<osclass type="general purpose" vendor="lwIP" osfamily="lwIP" accuracy="89"><cpe>cpe:/a:lwip_project:lwip</cpe></osclass>
-</osmatch>
-<address addr="30:FD:38:07:75:44" addrtype="mac" vendor="Google"/>
-<osmatch name="Linux 2.6.32 - 3.10" accuracy="99" line="56580">
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="99"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="99"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
-</osmatch>
-<osmatch name="Linux 3.10" accuracy="98" line="63056">
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="98"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
-</osmatch>
-<osmatch name="Linux 3.2 - 3.16" accuracy="98" line="65151">
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="98"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
-</osmatch>
-<osmatch name="Linux 3.6" accuracy="97" line="65764">
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3.6</cpe></osclass>
-</osmatch>
-<osmatch name="Linux 3.7" accuracy="97" line="65912">
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3.7</cpe></osclass>
-</osmatch>
-<osmatch name="Linux 2.6.32 - 3.5" accuracy="97" line="56784">
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
-</osmatch>
-<osmatch name="Linux 2.6.32 - 3.13" accuracy="96" line="56610">
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
-</osmatch>
-<osmatch name="Android 4.1 (Linux 3.0)" accuracy="96" line="31126">
-<osclass type="phone" vendor="Google" osfamily="Android" osgen="4.1.X" accuracy="96"><cpe>cpe:/o:google:android:4.1</cpe></osclass>
-<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.0</cpe></osclass>
-</osmatch>
-<osmatch name="CyanogenMod 11 (Android 4.4.4)" accuracy="96" line="19632">
-<osclass type="phone" vendor="CyanogenMod" osfamily="CyanogenMod" osgen="11.X" accuracy="96"><cpe>cpe:/o:cyanogenmod:cyanogenmod:11</cpe></osclass>
-<osclass type="phone" vendor="Google" osfamily="Android" osgen="4.X" accuracy="96"><cpe>cpe:/o:google:android:4.4.4</cpe></osclass>
-</osmatch>
-<osmatch name="Android 4.1.1" accuracy="96" line="31090">
-<osclass type="media device" vendor="Google" osfamily="Android" osgen="4.1.X" accuracy="96"><cpe>cpe:/o:google:android:4.1.1</cpe></osclass>
-</osmatch>
+Writing to file result_nmap_O_0.json
+Writing to file result_nmap_O_1.json
+Adding address: {"addr":"90:09:D0:1E:C7:84","addrtype":"mac","vendor":"Synology Incorporated"}
+Writing to file result_nmap_O_2.json
+Adding address: {"addr":"B0:E8:92:ED:F4:5F","addrtype":"mac","vendor":"Seiko Epson"}
+Writing to file result_nmap_O_3.json
+Adding address: {"addr":"90:09:D0:2A:E6:05","addrtype":"mac","vendor":"Synology Incorporated"}
+Writing to file result_nmap_O_4.json
+Adding address: {"addr":"E4:50:EB:B7:86:F0","addrtype":"mac","vendor":"Apple"}
+Writing to file result_nmap_O_5.json
+Adding address: {"addr":"58:11:22:9A:8D:FA","addrtype":"mac","vendor":"ASUSTek Computer"}
+Writing to file result_nmap_O_6.json
+Adding address: {"addr":"2C:FF:65:DC:F2:41","addrtype":"mac","vendor":"Oki Electric Industry"}
+Writing to file result_nmap_O_7.json
+Adding address: {"addr":"00:1E:06:42:A9:C3","addrtype":"mac","vendor":"Wibrain"}
+Writing to file result_nmap_O_8.json
+Adding address: {"addr":"CC:96:E5:2F:8D:AB","addrtype":"mac","vendor":"Dell"}
+Writing to file result_nmap_O_9.json
+Adding address: {"addr":"30:05:5C:6A:A1:8D","addrtype":"mac","vendor":"Brother industries"}
+Writing to file result_nmap_O_10.json
+Adding address: {"addr":"34:76:C5:F9:F6:3E","addrtype":"mac","vendor":"I-O Data Device"}
+Writing to file result_nmap_O_11.json
+Adding address: {"addr":"38:C9:86:19:C9:19","addrtype":"mac","vendor":"Apple"}
+Writing to file result_nmap_O_12.json
+Adding address: {"addr":"9C:76:0E:57:F9:EA","addrtype":"mac","vendor":"Apple"}
+Writing to file result_nmap_O_13.json
+Adding address: {"addr":"F0:B3:EC:58:7D:71","addrtype":"mac","vendor":"Apple"}
+Writing to file result_nmap_O_14.json
+Adding address: {"addr":"CC:96:E5:E8:F1:AA","addrtype":"mac","vendor":"Dell"}
+Writing to file result_nmap_O_15.json
+Adding address: {"addr":"10:A5:1D:2B:2E:1F","addrtype":"mac","vendor":"Intel Corporate"}
+Writing to file result_nmap_O_16.json
+Adding address: {"addr":"00:A0:DE:F6:08:A5","addrtype":"mac","vendor":"Yamaha"}
+Writing to file result_nmap_O_17.json
+Adding address: {"addr":"F0:2F:74:21:30:2A","addrtype":"mac","vendor":"ASUSTek Computer"}
+Writing to file result_nmap_O_18.json
+Adding address: {"addr":"AC:1F:6B:87:6E:41","addrtype":"mac","vendor":"Super Micro Computer"}
+Writing to file result_nmap_O_19.json
+Adding address: {"addr":"04:BF:1B:13:71:09","addrtype":"mac","vendor":"Dell"}
+Writing to file result_nmap_O_20.json
+Adding address: {"addr":"B8:27:EB:98:E5:68","addrtype":"mac","vendor":"Raspberry Pi Foundation"}
+Writing to file result_nmap_O_21.json
+Adding address: {"addr":"92:47:44:A1:53:26","addrtype":"mac"}
+Writing to file result_nmap_O_22.json
+Adding address: {"addr":"14:C1:4E:67:E2:A0","addrtype":"mac","vendor":"Google"}
+Writing to file result_nmap_O_23.json
+Adding address: {"addr":"80:0C:F9:1D:A9:04","addrtype":"mac","vendor":"Amazon Technologies"}
+Writing to file result_nmap_O_24.json
+Adding address: {"addr":"54:14:F3:9D:7A:29","addrtype":"mac","vendor":"Intel Corporate"}
+Writing to file result_nmap_O_25.json
+Adding address: {"addr":"64:D6:9A:7A:E8:65","addrtype":"mac","vendor":"Intel Corporate"}
+Writing to file result_nmap_O_26.json
+Adding address: {"addr":"5E:A2:24:A4:7E:70","addrtype":"mac"}
+Writing to file result_nmap_O_27.json
+Adding address: {"addr":"1C:93:C4:3F:29:13","addrtype":"mac","vendor":"Amazon Technologies"}
+Writing to file result_nmap_O_28.json
+Adding address: {"addr":"1E:44:8F:44:07:B2","addrtype":"mac"}
+Writing to file result_nmap_O_29.json
+Adding address: {"addr":"F8:0F:F9:53:5A:EA","addrtype":"mac","vendor":"Google"}
+Writing to file result_nmap_O_30.json
+Adding address: {"addr":"F8:0F:F9:53:5A:EA","addrtype":"mac","vendor":"Google"}
+Writing to file result_nmap_O_31.json
+Adding address: {"addr":"A0:78:17:6E:D4:70","addrtype":"mac","vendor":"Apple"}
+Writing to file result_nmap_O_32.json
+Adding address: {"addr":"50:14:79:F9:1B:E1","addrtype":"mac","vendor":"iRobot"}
+Writing to file result_nmap_O_33.json
+Adding address: {"addr":"F0:B3:EC:58:7D:71","addrtype":"mac","vendor":"Apple"}
+Writing to file result_nmap_O_34.json
+Adding address: {"addr":"F0:B3:EC:58:7D:71","addrtype":"mac","vendor":"Apple"}
+Writing to file result_nmap_O_35.json
+Adding address: {"addr":"F8:FF:C2:21:7C:58","addrtype":"mac","vendor":"Apple"}
+Writing to file result_nmap_O_36.json
+Adding address: {"addr":"00:A0:DE:F6:08:A5","addrtype":"mac","vendor":"Yamaha"}
+Adding osmatch: {"name":"Yamaha RT58i or RT107e router","accuracy":"100","line":"107029"}
+Writing to file result_nmap_O_37.json
+Adding address: {"addr":"90:09:D0:2A:E6:05","addrtype":"mac","vendor":"Synology Incorporated"}
+Adding osmatch: {"name":"Linux 2.6.32 - 3.10","accuracy":"100","line":"56580"}
+Adding osmatch: {"name":"Linux 3.4 - 3.10","accuracy":"100","line":"65584"}
+Adding osmatch: {"name":"Synology DiskStation Manager 5.2-5644","accuracy":"100","line":"101723"}
+Writing to file result_nmap_O_38.json
+Adding address: {"addr":"B0:E8:92:ED:F4:5F","addrtype":"mac","vendor":"Seiko Epson"}
+Adding osmatch: {"name":"Linux 2.6.16 - 2.6.35 (embedded)","accuracy":"100","line":"48482"}
+Writing to file result_nmap_O_39.json
+Adding address: {"addr":"2C:FF:65:DC:F2:41","addrtype":"mac","vendor":"Oki Electric Industry"}
+Adding osmatch: {"name":"Oki ES8473 printer","accuracy":"100","line":"90234"}
+Writing to file result_nmap_O_40.json
+Adding address: {"addr":"90:09:D0:1E:C7:84","addrtype":"mac","vendor":"Synology Incorporated"}
+Adding osmatch: {"name":"Linux 3.2 - 4.9","accuracy":"100","line":"65323"}
+Writing to file result_nmap_O_41.json
+Adding address: {"addr":"E4:50:EB:B7:86:F0","addrtype":"mac","vendor":"Apple"}
+Adding osmatch: {"name":"Apple macOS 11 (Big Sur) (Darwin 20.6.0)","accuracy":"100","line":"107991"}
+Writing to file result_nmap_O_42.json
+Adding address: {"addr":"9C:76:0E:57:F9:EA","addrtype":"mac","vendor":"Apple"}
+Adding osmatch: {"name":"Apple macOS 10.13 (High Sierra) - 10.15 (Catalina) or iOS 11.0 - 13.4 (Darwin 17.0.0 - 19.6.0)","accuracy":"97","line":"3612"}
+Adding osmatch: {"name":"Apple macOS 11 (Big Sur) (Darwin 20.6.0)","accuracy":"97","line":"107991"}
+Adding osmatch: {"name":"Apple Mac OS X 10.11 (El Capitan) or iOS 12.4 - 13.6 (Darwin 15.6.0 - 19.6.0)","accuracy":"96","line":"7509"}
+Adding osmatch: {"name":"Apple macOS 10.15 (Catalina) (Darwin 19.6.0)","accuracy":"96","line":"108025"}
+Adding osmatch: {"name":"Apple TV 5","accuracy":"93","line":"3338"}
+Adding osmatch: {"name":"Apple Mac OS X 10.4.8 - 10.4.11 (Tiger) (Darwin 8.8.0 - 8.11.0)","accuracy":"92","line":"5486"}
+Adding osmatch: {"name":"Apple Mac OS X 10.4.10 (Tiger) (Darwin 8.10.0, PowerPC)","accuracy":"91","line":"5253"}
+Adding osmatch: {"name":"Apple iPad tablet computer (iOS 4.3.2)","accuracy":"90","line":"3678"}
+Adding osmatch: {"name":"Apple iPad tablet computer or iPhone mobile phone (iOS 4.0 - 4.1)","accuracy":"90","line":"3815"}
+Adding osmatch: {"name":"Apple iPhone mobile phone (iOS 4.3.2)","accuracy":"90","line":"3851"}
+Writing to file result_nmap_O_43.json
+Adding address: {"addr":"58:11:22:9A:8D:FA","addrtype":"mac","vendor":"ASUSTek Computer"}
+Adding osmatch: {"name":"Linux 4.15 - 5.8","accuracy":"100","line":"67250"}
+Writing to file result_nmap_O_44.json
+Adding address: {"addr":"B8:27:EB:98:E5:68","addrtype":"mac","vendor":"Raspberry Pi Foundation"}
+Adding osmatch: {"name":"Linux 5.0 - 5.4","accuracy":"97","line":"68121"}
+Adding osmatch: {"name":"Linux 4.15 - 5.8","accuracy":"93","line":"67250"}
+Adding osmatch: {"name":"Linux 2.6.39","accuracy":"93","line":"58199"}
+Adding osmatch: {"name":"Linux 5.0 - 5.5","accuracy":"92","line":"68098"}
+Adding osmatch: {"name":"Linux 2.6.32 - 3.13","accuracy":"92","line":"56610"}
+Adding osmatch: {"name":"Linux 2.6.22 - 2.6.36","accuracy":"91","line":"51885"}
+Adding osmatch: {"name":"Linux 3.10 - 4.11","accuracy":"91","line":"63448"}
+Adding osmatch: {"name":"Linux 5.1","accuracy":"91","line":"68139"}
+Adding osmatch: {"name":"Linux 2.6.32","accuracy":"90","line":"55372"}
+Adding osmatch: {"name":"Linux 3.2 - 4.9","accuracy":"90","line":"65323"}
+Writing to file result_nmap_O_45.json
+Adding address: {"addr":"F0:2F:74:21:30:2A","addrtype":"mac","vendor":"ASUSTek Computer"}
+Adding osmatch: {"name":"Microsoft Windows Server 2019","accuracy":"91","line":"108162"}
+Adding osmatch: {"name":"Microsoft Windows 10 1909","accuracy":"90","line":"107973"}
+Adding osmatch: {"name":"Microsoft Windows XP SP3","accuracy":"85","line":"84889"}
+Adding osmatch: {"name":"Microsoft Windows XP SP2","accuracy":"85","line":"81613"}
+Writing to file result_nmap_O_46.json
+Adding address: {"addr":"00:1E:06:42:A9:C3","addrtype":"mac","vendor":"Wibrain"}
+Adding osmatch: {"name":"Linux 5.0 - 5.5","accuracy":"100","line":"68098"}
+Writing to file result_nmap_O_47.json
+Adding address: {"addr":"30:05:5C:6A:A1:8D","addrtype":"mac","vendor":"Brother industries"}
+Writing to file result_nmap_O_48.json
+Adding address: {"addr":"64:D6:9A:7A:E8:65","addrtype":"mac","vendor":"Intel Corporate"}
+Adding osmatch: {"name":"Microsoft Windows 11 21H2","accuracy":"97","line":"108230"}
+Adding osmatch: {"name":"Microsoft Windows 10","accuracy":"92","line":"69394"}
+Adding osmatch: {"name":"Microsoft Windows Server 2022","accuracy":"91","line":"108094"}
+Adding osmatch: {"name":"Microsoft Windows Phone 7.5 or 8.0","accuracy":"88","line":"79354"}
+Adding osmatch: {"name":"Microsoft Windows Server 2008 SP1","accuracy":"88","line":"75151"}
+Writing to file result_nmap_O_49.json
+Adding address: {"addr":"CC:96:E5:2F:8D:AB","addrtype":"mac","vendor":"Dell"}
+Writing to file result_nmap_O_50.json
+Adding address: {"addr":"10:A5:1D:2B:2E:1F","addrtype":"mac","vendor":"Intel Corporate"}
+Writing to file result_nmap_O_51.json
+Adding address: {"addr":"80:0C:F9:1D:A9:04","addrtype":"mac","vendor":"Amazon Technologies"}
+Adding osmatch: {"name":"Android 6.0 - 7.1.2 (Linux 3.18 - 4.4.1)","accuracy":"100","line":"31701"}
+Writing to file result_nmap_O_52.json
+Adding address: {"addr":"F8:FF:C2:21:7C:58","addrtype":"mac","vendor":"Apple"}
+Adding osmatch: {"name":"Apple macOS 11 (Big Sur) (Darwin 20.6.0)","accuracy":"100","line":"107991"}
+Writing to file result_nmap_O_53.json
+Adding address: {"addr":"F0:B3:EC:58:7D:71","addrtype":"mac","vendor":"Apple"}
+Adding osmatch: {"name":"Apple macOS 11 (Big Sur) (Darwin 20.6.0)","accuracy":"95","line":"107991"}
+Adding osmatch: {"name":"Apple Mac OS X 10.7.0 (Lion) - 10.12 (Sierra) or iOS 4.1 - 9.3.3 (Darwin 10.0.0 - 16.4.0)","accuracy":"94","line":"6483"}
+Adding osmatch: {"name":"Apple Mac OS X 10.11 (El Capitan) or iOS 12.4 - 13.6 (Darwin 15.6.0 - 19.6.0)","accuracy":"93","line":"7509"}
+Adding osmatch: {"name":"Apple macOS 10.15 (Catalina) (Darwin 19.6.0)","accuracy":"93","line":"108025"}
+Adding osmatch: {"name":"Apple Mac OS X Server 10.5 (Leopard) pre-release build 9A284","accuracy":"93","line":"6048"}
+Adding osmatch: {"name":"Apple macOS 10.13 (High Sierra) - 10.15 (Catalina) or iOS 11.0 - 13.4 (Darwin 17.0.0 - 19.6.0)","accuracy":"92","line":"3612"}
+Adding osmatch: {"name":"Apple Mac OS X 10.4.11 (Tiger) (Darwin 8.11.0, PowerPC)","accuracy":"92","line":"5464"}
+Adding osmatch: {"name":"Apple macOS 11 (Big Sur) (Darwin 20.5.0)","accuracy":"92","line":"108042"}
+Adding osmatch: {"name":"Apple Mac OS X 10.4.10 (Tiger) (Darwin 8.10.0, PowerPC)","accuracy":"92","line":"5253"}
+Adding osmatch: {"name":"Apple iOS 9.0 (Darwin 15.0.0)","accuracy":"91","line":"4416"}
+Writing to file result_nmap_O_54.json
+Adding address: {"addr":"1C:93:C4:3F:29:13","addrtype":"mac","vendor":"Amazon Technologies"}
+Adding osmatch: {"name":"Sony X75CH-series Android TV (Android 5.0)","accuracy":"98","line":"31498"}
+Adding osmatch: {"name":"Android 4.1 - 6.0 (Linux 3.4 - 3.14)","accuracy":"97","line":"31415"}
+Adding osmatch: {"name":"Linux 2.6.32","accuracy":"96","line":"55372"}
+Adding osmatch: {"name":"Linux 3.2 - 4.9","accuracy":"96","line":"65323"}
+Adding osmatch: {"name":"Netgear ReadyNAS 2100 (RAIDiator 4.2.24)","accuracy":"96","line":"88526"}
+Adding osmatch: {"name":"Linux 2.6.32 - 3.10","accuracy":"96","line":"56580"}
+Adding osmatch: {"name":"Linux 5.0 - 5.5","accuracy":"96","line":"68098"}
+Adding osmatch: {"name":"Android 4.2.2 (Linux 3.4)","accuracy":"95","line":"31262"}
+Adding osmatch: {"name":"Android 5.1","accuracy":"95","line":"31629"}
+Adding osmatch: {"name":"Android 7.1.2 (Linux 3.4)","accuracy":"95","line":"31842"}
+Writing to file result_nmap_O_55.json
+Adding address: {"addr":"50:14:79:F9:1B:E1","addrtype":"mac","vendor":"iRobot"}
+Writing to file result_nmap_O_56.json
+Adding address: {"addr":"34:76:C5:F9:F6:3E","addrtype":"mac","vendor":"I-O Data Device"}
+Adding osmatch: {"name":"Linux 3.2 - 3.16","accuracy":"100","line":"65151"}
+Writing to file result_nmap_O_57.json
+Adding address: {"addr":"38:C9:86:19:C9:19","addrtype":"mac","vendor":"Apple"}
+Adding osmatch: {"name":"Apple macOS 11 (Big Sur) (Darwin 20.6.0)","accuracy":"100","line":"107991"}
+Writing to file result_nmap_O_58.json
+Adding address: {"addr":"1E:44:8F:44:07:B2","addrtype":"mac"}
+Adding osmatch: {"name":"Apple macOS 11 (Big Sur) (Darwin 20.6.0)","accuracy":"100","line":"107991"}
+Writing to file result_nmap_O_59.json
+Adding address: {"addr":"5E:A2:24:A4:7E:70","addrtype":"mac"}
+Adding osmatch: {"name":"Apple macOS 11 (Big Sur) (Darwin 20.6.0)","accuracy":"100","line":"107991"}
+Writing to file result_nmap_O_60.json
+Adding address: {"addr":"14:C1:4E:67:E2:A0","addrtype":"mac","vendor":"Google"}
+Adding osmatch: {"name":"Linux 3.2 - 4.9","accuracy":"100","line":"65323"}
+Writing to file result_nmap_O_61.json
+Adding address: {"addr":"54:14:F3:9D:7A:29","addrtype":"mac","vendor":"Intel Corporate"}
+Adding osmatch: {"name":"Microsoft Windows 11 21H2","accuracy":"96","line":"108230"}
+Adding osmatch: {"name":"Microsoft Windows 10","accuracy":"91","line":"69394"}
+Adding osmatch: {"name":"Microsoft Windows Server 2022","accuracy":"90","line":"108094"}
+Adding osmatch: {"name":"Microsoft Windows Phone 7.5 or 8.0","accuracy":"87","line":"79354"}
+Writing to file result_nmap_O_62.json
+Adding address: {"addr":"92:47:44:A1:53:26","addrtype":"mac"}
+Adding osmatch: {"name":"Microsoft Xbox 360 Dashboard","accuracy":"100","line":"85584"}
+Writing to file result_nmap_O_63.json
+Adding address: {"addr":"F8:0F:F9:53:5A:EA","addrtype":"mac","vendor":"Google"}
+Adding osmatch: {"name":"FreeNAS 0.69RC2 (FreeBSD 6.4-RELEASE)","accuracy":"88","line":"29797"}
+Adding osmatch: {"name":"3Com SuperStack 3 Switch 3870","accuracy":"87","line":"635"}
+Adding osmatch: {"name":"FreeNAS 0.69 (FreeBSD 6.4-RELEASE-p3)","accuracy":"87","line":"29733"}
+Adding osmatch: {"name":"Avocent ACS 5000 console server (Linux 2.6.11)","accuracy":"87","line":"8975"}
+Adding osmatch: {"name":"Linux 2.6.18","accuracy":"87","line":"49542"}
+Adding osmatch: {"name":"D-Link DPR-1260 print server; or DGL-4300, DGL-4500, DIR-615, DIR-625, DIR-628, DIR-655, or DIR-855 WAP","accuracy":"87","line":"19997"}
+Adding osmatch: {"name":"Scientific Atlanta WebSTAR EPC2203 cable modem","accuracy":"87","line":"96577"}
+Adding osmatch: {"name":"Epson Stylus Pro 400 printer","accuracy":"86","line":"24561"}
+Adding osmatch: {"name":"Symbian^3","accuracy":"86","line":"101517"}
+Adding osmatch: {"name":"uClinux 2.4.19-uc1 (ARM)","accuracy":"86","line":"46957"}
+Writing to file result_nmap_O_64.json
+Adding address: {"addr":"F0:B3:EC:58:7D:71","addrtype":"mac","vendor":"Apple"}
+Adding osmatch: {"name":"Apple OS X 10.11 (El Capitan) - 10.12 (Sierra) or iOS 10.1 - 10.2 (Darwin 15.4.0 - 16.6.0)","accuracy":"90","line":"7552"}
+Adding osmatch: {"name":"Apple macOS 11 (Big Sur) (Darwin 20.6.0)","accuracy":"89","line":"107991"}
+Adding osmatch: {"name":"Apple TV 5","accuracy":"88","line":"3338"}
+Adding osmatch: {"name":"Apple macOS 10.13 (High Sierra) - 10.15 (Catalina) or iOS 11.0 - 13.4 (Darwin 17.0.0 - 19.6.0)","accuracy":"88","line":"3612"}
+Adding osmatch: {"name":"Apple Mac OS X 10.7.0 (Lion) - 10.12 (Sierra) or iOS 4.1 - 9.3.3 (Darwin 10.0.0 - 16.4.0)","accuracy":"87","line":"6483"}
+Adding osmatch: {"name":"Apple Mac OS X Server 10.5 (Leopard) pre-release build 9A284","accuracy":"87","line":"6048"}
+Adding osmatch: {"name":"Apple Mac OS X 10.11 (El Capitan) or iOS 12.4 - 13.6 (Darwin 15.6.0 - 19.6.0)","accuracy":"86","line":"7509"}
+Adding osmatch: {"name":"Apple macOS 10.15 (Catalina) (Darwin 19.6.0)","accuracy":"86","line":"108025"}
+Adding osmatch: {"name":"Apple Mac OS X 10.4.11 (Tiger) (Darwin 8.11.0, PowerPC)","accuracy":"85","line":"5464"}
+Adding osmatch: {"name":"Apple TV 5.2.1 or 5.3","accuracy":"85","line":"3357"}
+Writing to file result_nmap_O_65.json
+Adding address: {"addr":"A0:78:17:6E:D4:70","addrtype":"mac","vendor":"Apple"}
+Adding osmatch: {"name":"Apple macOS 11 (Big Sur) (Darwin 20.6.0)","accuracy":"100","line":"107991"}
+Writing to file result_nmap_O_66.json
+Adding address: {"addr":"CC:96:E5:E8:F1:AA","addrtype":"mac","vendor":"Dell"}
+Adding osmatch: {"name":"Linux 4.15 - 5.8","accuracy":"100","line":"67250"}
+Writing to file result_nmap_O_67.json
+Adding address: {"addr":"AC:1F:6B:87:6E:41","addrtype":"mac","vendor":"Super Micro Computer"}
+Adding osmatch: {"name":"Linux 5.0 - 5.4","accuracy":"98","line":"68121"}
+Adding osmatch: {"name":"Linux 4.15 - 5.8","accuracy":"94","line":"67250"}
+Adding osmatch: {"name":"Linux 5.0 - 5.5","accuracy":"93","line":"68098"}
+Adding osmatch: {"name":"Linux 5.1","accuracy":"93","line":"68139"}
+Adding osmatch: {"name":"Linux 2.6.32 - 3.13","accuracy":"93","line":"56610"}
+Adding osmatch: {"name":"Linux 2.6.39","accuracy":"93","line":"58199"}
+Adding osmatch: {"name":"Linux 2.6.22 - 2.6.36","accuracy":"91","line":"51885"}
+Adding osmatch: {"name":"Linux 3.10 - 4.11","accuracy":"91","line":"63448"}
+Adding osmatch: {"name":"Linux 5.0","accuracy":"91","line":"68054"}
+Adding osmatch: {"name":"Linux 3.10","accuracy":"91","line":"63038"}
+Writing to file result_nmap_O_68.json
+Adding address: {"addr":"04:BF:1B:13:71:09","addrtype":"mac","vendor":"Dell"}
+Adding osmatch: {"name":"Linux 4.15 - 5.8","accuracy":"100","line":"67250"}
+Writing to file result_nmap_O_69.json
+Adding address: {"addr":"F0:B3:EC:58:7D:71","addrtype":"mac","vendor":"Apple"}
+Adding osmatch: {"name":"Apple OS X 10.11 (El Capitan) - 10.12 (Sierra) or iOS 10.1 - 10.2 (Darwin 15.4.0 - 16.6.0)","accuracy":"90","line":"7552"}
+Adding osmatch: {"name":"Apple macOS 11 (Big Sur) (Darwin 20.6.0)","accuracy":"90","line":"107991"}
+Adding osmatch: {"name":"Apple TV 5","accuracy":"89","line":"3338"}
+Adding osmatch: {"name":"Apple macOS 10.13 (High Sierra) - 10.15 (Catalina) or iOS 11.0 - 13.4 (Darwin 17.0.0 - 19.6.0)","accuracy":"89","line":"3612"}
+Adding osmatch: {"name":"Apple Mac OS X 10.7.0 (Lion) - 10.12 (Sierra) or iOS 4.1 - 9.3.3 (Darwin 10.0.0 - 16.4.0)","accuracy":"87","line":"6483"}
+Adding osmatch: {"name":"Apple Mac OS X Server 10.5 (Leopard) pre-release build 9A284","accuracy":"86","line":"6048"}
+Adding osmatch: {"name":"Apple Mac OS X 10.11 (El Capitan) or iOS 12.4 - 13.6 (Darwin 15.6.0 - 19.6.0)","accuracy":"86","line":"7509"}
+Adding osmatch: {"name":"Apple Mac OS X 10.4.11 (Tiger) (Darwin 8.11.0, PowerPC)","accuracy":"85","line":"5464"}
+Adding osmatch: {"name":"Apple Mac OS X 10.6.5 (Snow Leopard) (Darwin 10.5.0)","accuracy":"85","line":"6266"}
+Adding osmatch: {"name":"Apple macOS 11 (Big Sur) (Darwin 20.5.0)","accuracy":"85","line":"108042"}
+Writing to file result_nmap_O_70.json
+Adding address: {"addr":"F8:0F:F9:53:5A:EA","addrtype":"mac","vendor":"Google"}
+Adding osmatch: {"name":"Apple macOS 11 (Big Sur) (Darwin 20.5.0)","accuracy":"100","line":"108042"}
+Writing to file result_nmap_O_71.json
+Cleaned data: [{"osmatch":[]},{"osmatch":[]},{"address":{"addr":"90:09:D0:1E:C7:84","addrtype":"mac","vendor":"Synology Incorporated"},"osmatch":[]},{"address":{"addr":"B0:E8:92:ED:F4:5F","addrtype":"mac","vendor":"Seiko Epson"},"osmatch":[]},{"address":{"addr":"90:09:D0:2A:E6:05","addrtype":"mac","vendor":"Synology Incorporated"},"osmatch":[]},{"address":{"addr":"E4:50:EB:B7:86:F0","addrtype":"mac","vendor":"Apple"},"osmatch":[]},{"address":{"addr":"58:11:22:9A:8D:FA","addrtype":"mac","vendor":"ASUSTek Computer"},"osmatch":[]},{"address":{"addr":"2C:FF:65:DC:F2:41","addrtype":"mac","vendor":"Oki Electric Industry"},"osmatch":[]},{"address":{"addr":"00:1E:06:42:A9:C3","addrtype":"mac","vendor":"Wibrain"},"osmatch":[]},{"address":{"addr":"CC:96:E5:2F:8D:AB","addrtype":"mac","vendor":"Dell"},"osmatch":[]},{"address":{"addr":"30:05:5C:6A:A1:8D","addrtype":"mac","vendor":"Brother industries"},"osmatch":[]},{"address":{"addr":"34:76:C5:F9:F6:3E","addrtype":"mac","vendor":"I-O Data Device"},"osmatch":[]},{"address":{"addr":"38:C9:86:19:C9:19","addrtype":"mac","vendor":"Apple"},"osmatch":[]},{"address":{"addr":"9C:76:0E:57:F9:EA","addrtype":"mac","vendor":"Apple"},"osmatch":[]},{"address":{"addr":"F0:B3:EC:58:7D:71","addrtype":"mac","vendor":"Apple"},"osmatch":[]},{"address":{"addr":"CC:96:E5:E8:F1:AA","addrtype":"mac","vendor":"Dell"},"osmatch":[]},{"address":{"addr":"10:A5:1D:2B:2E:1F","addrtype":"mac","vendor":"Intel Corporate"},"osmatch":[]},{"address":{"addr":"00:A0:DE:F6:08:A5","addrtype":"mac","vendor":"Yamaha"},"osmatch":[]},{"address":{"addr":"F0:2F:74:21:30:2A","addrtype":"mac","vendor":"ASUSTek Computer"},"osmatch":[]},{"address":{"addr":"AC:1F:6B:87:6E:41","addrtype":"mac","vendor":"Super Micro Computer"},"osmatch":[]},{"address":{"addr":"04:BF:1B:13:71:09","addrtype":"mac","vendor":"Dell"},"osmatch":[]},{"address":{"addr":"B8:27:EB:98:E5:68","addrtype":"mac","vendor":"Raspberry Pi Foundation"},"osmatch":[]},{"address":{"addr":"92:47:44:A1:53:26","addrtype":"mac"},"osmatch":[]},{"address":{"addr":"14:C1:4E:67:E2:A0","addrtype":"mac","vendor":"Google"},"osmatch":[]},{"address":{"addr":"80:0C:F9:1D:A9:04","addrtype":"mac","vendor":"Amazon Technologies"},"osmatch":[]},{"address":{"addr":"54:14:F3:9D:7A:29","addrtype":"mac","vendor":"Intel Corporate"},"osmatch":[]},{"address":{"addr":"64:D6:9A:7A:E8:65","addrtype":"mac","vendor":"Intel Corporate"},"osmatch":[]},{"address":{"addr":"5E:A2:24:A4:7E:70","addrtype":"mac"},"osmatch":[]},{"address":{"addr":"1C:93:C4:3F:29:13","addrtype":"mac","vendor":"Amazon Technologies"},"osmatch":[]},{"address":{"addr":"1E:44:8F:44:07:B2","addrtype":"mac"},"osmatch":[]},{"address":{"addr":"F8:0F:F9:53:5A:EA","addrtype":"mac","vendor":"Google"},"osmatch":[]},{"address":{"addr":"F8:0F:F9:53:5A:EA","addrtype":"mac","vendor":"Google"},"osmatch":[]},{"address":{"addr":"A0:78:17:6E:D4:70","addrtype":"mac","vendor":"Apple"},"osmatch":[]},{"address":{"addr":"50:14:79:F9:1B:E1","addrtype":"mac","vendor":"iRobot"},"osmatch":[]},{"address":{"addr":"F0:B3:EC:58:7D:71","addrtype":"mac","vendor":"Apple"},"osmatch":[]},{"address":{"addr":"F0:B3:EC:58:7D:71","addrtype":"mac","vendor":"Apple"},"osmatch":[]},{"address":{"addr":"F8:FF:C2:21:7C:58","addrtype":"mac","vendor":"Apple"},"osmatch":[]},{"address":{"addr":"00:A0:DE:F6:08:A5","addrtype":"mac","vendor":"Yamaha"},"osmatch":[{"name":"Yamaha RT58i or RT107e router","accuracy":"100","line":"107029"}]},{"address":{"addr":"90:09:D0:2A:E6:05","addrtype":"mac","vendor":"Synology Incorporated"},"osmatch":[{"name":"Linux 2.6.32 - 3.10","accuracy":"100","line":"56580"}]},{"address":{"addr":"B0:E8:92:ED:F4:5F","addrtype":"mac","vendor":"Seiko Epson"},"osmatch":[{"name":"Linux 2.6.16 - 2.6.35 (embedded)","accuracy":"100","line":"48482"}]},{"address":{"addr":"2C:FF:65:DC:F2:41","addrtype":"mac","vendor":"Oki Electric Industry"},"osmatch":[{"name":"Oki ES8473 printer","accuracy":"100","line":"90234"}]},{"address":{"addr":"90:09:D0:1E:C7:84","addrtype":"mac","vendor":"Synology Incorporated"},"osmatch":[{"name":"Linux 3.2 - 4.9","accuracy":"100","line":"65323"}]},{"address":{"addr":"E4:50:EB:B7:86:F0","addrtype":"mac","vendor":"Apple"},"osmatch":[{"name":"Apple macOS 11 (Big Sur) (Darwin 20.6.0)","accuracy":"100","line":"107991"}]},{"address":{"addr":"9C:76:0E:57:F9:EA","addrtype":"mac","vendor":"Apple"},"osmatch":[{"name":"Apple macOS 10.13 (High Sierra) - 10.15 (Catalina) or iOS 11.0 - 13.4 (Darwin 17.0.0 - 19.6.0)","accuracy":"97","line":"3612"}]},{"address":{"addr":"58:11:22:9A:8D:FA","addrtype":"mac","vendor":"ASUSTek Computer"},"osmatch":[{"name":"Linux 4.15 - 5.8","accuracy":"100","line":"67250"}]},{"address":{"addr":"B8:27:EB:98:E5:68","addrtype":"mac","vendor":"Raspberry Pi Foundation"},"osmatch":[{"name":"Linux 5.0 - 5.4","accuracy":"97","line":"68121"}]},{"address":{"addr":"F0:2F:74:21:30:2A","addrtype":"mac","vendor":"ASUSTek Computer"},"osmatch":[{"name":"Microsoft Windows Server 2019","accuracy":"91","line":"108162"}]},{"address":{"addr":"00:1E:06:42:A9:C3","addrtype":"mac","vendor":"Wibrain"},"osmatch":[{"name":"Linux 5.0 - 5.5","accuracy":"100","line":"68098"}]},{"address":{"addr":"30:05:5C:6A:A1:8D","addrtype":"mac","vendor":"Brother industries"},"osmatch":[]},{"address":{"addr":"64:D6:9A:7A:E8:65","addrtype":"mac","vendor":"Intel Corporate"},"osmatch":[{"name":"Microsoft Windows 11 21H2","accuracy":"97","line":"108230"}]},{"address":{"addr":"CC:96:E5:2F:8D:AB","addrtype":"mac","vendor":"Dell"},"osmatch":[]},{"address":{"addr":"10:A5:1D:2B:2E:1F","addrtype":"mac","vendor":"Intel Corporate"},"osmatch":[]},{"address":{"addr":"80:0C:F9:1D:A9:04","addrtype":"mac","vendor":"Amazon Technologies"},"osmatch":[{"name":"Android 6.0 - 7.1.2 (Linux 3.18 - 4.4.1)","accuracy":"100","line":"31701"}]},{"address":{"addr":"F8:FF:C2:21:7C:58","addrtype":"mac","vendor":"Apple"},"osmatch":[{"name":"Apple macOS 11 (Big Sur) (Darwin 20.6.0)","accuracy":"100","line":"107991"}]},{"address":{"addr":"F0:B3:EC:58:7D:71","addrtype":"mac","vendor":"Apple"},"osmatch":[{"name":"Apple macOS 11 (Big Sur) (Darwin 20.6.0)","accuracy":"95","line":"107991"}]},{"address":{"addr":"1C:93:C4:3F:29:13","addrtype":"mac","vendor":"Amazon Technologies"},"osmatch":[{"name":"Sony X75CH-series Android TV (Android 5.0)","accuracy":"98","line":"31498"}]},{"address":{"addr":"50:14:79:F9:1B:E1","addrtype":"mac","vendor":"iRobot"},"osmatch":[]},{"address":{"addr":"34:76:C5:F9:F6:3E","addrtype":"mac","vendor":"I-O Data Device"},"osmatch":[{"name":"Linux 3.2 - 3.16","accuracy":"100","line":"65151"}]},{"address":{"addr":"38:C9:86:19:C9:19","addrtype":"mac","vendor":"Apple"},"osmatch":[{"name":"Apple macOS 11 (Big Sur) (Darwin 20.6.0)","accuracy":"100","line":"107991"}]},{"address":{"addr":"1E:44:8F:44:07:B2","addrtype":"mac"},"osmatch":[{"name":"Apple macOS 11 (Big Sur) (Darwin 20.6.0)","accuracy":"100","line":"107991"}]},{"address":{"addr":"5E:A2:24:A4:7E:70","addrtype":"mac"},"osmatch":[{"name":"Apple macOS 11 (Big Sur) (Darwin 20.6.0)","accuracy":"100","line":"107991"}]},{"address":{"addr":"14:C1:4E:67:E2:A0","addrtype":"mac","vendor":"Google"},"osmatch":[{"name":"Linux 3.2 - 4.9","accuracy":"100","line":"65323"}]},{"address":{"addr":"54:14:F3:9D:7A:29","addrtype":"mac","vendor":"Intel Corporate"},"osmatch":[{"name":"Microsoft Windows 11 21H2","accuracy":"96","line":"108230"}]},{"address":{"addr":"92:47:44:A1:53:26","addrtype":"mac"},"osmatch":[{"name":"Microsoft Xbox 360 Dashboard","accuracy":"100","line":"85584"}]},{"address":{"addr":"F8:0F:F9:53:5A:EA","addrtype":"mac","vendor":"Google"},"osmatch":[{"name":"FreeNAS 0.69RC2 (FreeBSD 6.4-RELEASE)","accuracy":"88","line":"29797"}]},{"address":{"addr":"F0:B3:EC:58:7D:71","addrtype":"mac","vendor":"Apple"},"osmatch":[{"name":"Apple OS X 10.11 (El Capitan) - 10.12 (Sierra) or iOS 10.1 - 10.2 (Darwin 15.4.0 - 16.6.0)","accuracy":"90","line":"7552"}]},{"address":{"addr":"A0:78:17:6E:D4:70","addrtype":"mac","vendor":"Apple"},"osmatch":[{"name":"Apple macOS 11 (Big Sur) (Darwin 20.6.0)","accuracy":"100","line":"107991"}]},{"address":{"addr":"CC:96:E5:E8:F1:AA","addrtype":"mac","vendor":"Dell"},"osmatch":[{"name":"Linux 4.15 - 5.8","accuracy":"100","line":"67250"}]},{"address":{"addr":"AC:1F:6B:87:6E:41","addrtype":"mac","vendor":"Super Micro Computer"},"osmatch":[{"name":"Linux 5.0 - 5.4","accuracy":"98","line":"68121"}]},{"address":{"addr":"04:BF:1B:13:71:09","addrtype":"mac","vendor":"Dell"},"osmatch":[{"name":"Linux 4.15 - 5.8","accuracy":"100","line":"67250"}]},{"address":{"addr":"F0:B3:EC:58:7D:71","addrtype":"mac","vendor":"Apple"},"osmatch":[{"name":"Apple OS X 10.11 (El Capitan) - 10.12 (Sierra) or iOS 10.1 - 10.2 (Darwin 15.4.0 - 16.6.0)","accuracy":"90","line":"7552"}]},{"address":{"addr":"F8:0F:F9:53:5A:EA","addrtype":"mac","vendor":"Google"},"osmatch":[{"name":"Apple macOS 11 (Big Sur) (Darwin 20.5.0)","accuracy":"100","line":"108042"}]}]
+Result file path: /Users/sf/ghq/github.com/Fukuda-Sakito/device_scan/src/scripts/results/result.json
+Parsed result data: [{"ip":"169.254.57.67","mac":"a0:ce:c8:d3:8a:60","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"169.254.86.239","mac":"1c:83:41:30:4f:50","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"169.254.147.165","mac":"d0:ab:d5:7e:b1:4d","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"169.254.149.104","mac":"bc:f4:d4:de:51:e5","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"169.254.157.9","mac":"34:6f:24:be:b9:b1","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"169.254.157.230","mac":"9c:b6:d0:c2:8d:cd","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"169.254.169.254","mac":"(incomplete)","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.1","mac":"0:a0:de:f6:8:a5","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.10","mac":"90:9:d0:2a:e6:5","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.11","mac":"b0:e8:92:ed:f4:5f","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.12","mac":"2c:ff:65:dc:f2:41","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.17","mac":"90:9:d0:1e:c7:84","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.55","mac":"e4:50:eb:b7:86:f0","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.56","mac":"0:5:1b:cc:6a:aa","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.57","mac":"9c:76:e:57:f9:ea","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.72","mac":"58:11:22:9a:8d:fa","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.83","mac":"b8:27:eb:98:e5:68","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.91","mac":"f0:2f:74:21:30:2a","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.104","mac":"0:1e:6:42:a9:c3","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.105","mac":"60:55:f9:41:9a:98","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.108","mac":"30:5:5c:6a:a1:8d","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.110","mac":"64:d6:9a:7a:e8:65","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.114","mac":"b8:27:eb:eb:1a:ce","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.119","mac":"cc:96:e5:2f:8d:ab","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.120","mac":"dc:f5:5:68:4b:d3","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.126","mac":"10:a5:1d:2b:2e:1f","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.128","mac":"80:c:f9:1d:a9:4","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.129","mac":"f8:ff:c2:21:7c:58","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.130","mac":"f0:b3:ec:58:7d:71","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.132","mac":"f4:69:42:b1:aa:c9","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.140","mac":"1c:53:f9:34:56:9a","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.142","mac":"1c:93:c4:3f:29:13","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.143","mac":"50:14:79:f9:1b:e1","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.146","mac":"34:76:c5:f9:f6:3e","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.148","mac":"60:55:f9:40:11:a8","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.150","mac":"40:4c:ca:7d:b2:98","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.152","mac":"38:c9:86:19:c9:19","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.156","mac":"1e:44:8f:44:7:b2","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.159","mac":"5e:a2:24:a4:7e:70","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.160","mac":"f8:4d:89:7b:81:fd","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.161","mac":"14:c1:4e:67:e2:a0","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.162","mac":"54:14:f3:9d:7a:29","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.163","mac":"92:47:44:a1:53:26","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.165","mac":"f8:f:f9:53:5a:ea","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.188","mac":"f0:b3:ec:58:7d:71","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.208","mac":"a0:78:17:6e:d4:70","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.209","mac":"cc:96:e5:e8:f1:aa","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.214","mac":"ac:1f:6b:87:6e:41","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.215","mac":"4:bf:1b:13:71:9","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.218","mac":"f0:b3:ec:58:7d:71","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.12.230","mac":"d0:c6:37:7d:71:7","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"192.168.13.255","mac":"f8:f:f9:53:5a:ea","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"224.0.0.251","mac":"1:0:5e:0:0:fb","serviceInfo":"mdns.mcast.net","OS":"unknown","vendor":"unknown","type":"unknown"},{"ip":"239.255.255.250","mac":"1:0:5e:7f:ff:fa","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}]
+Processing result item 0: {"ip":"169.254.57.67","mac":"a0:ce:c8:d3:8a:60","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 1: {"ip":"169.254.86.239","mac":"1c:83:41:30:4f:50","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 2: {"ip":"169.254.147.165","mac":"d0:ab:d5:7e:b1:4d","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 3: {"ip":"169.254.149.104","mac":"bc:f4:d4:de:51:e5","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 4: {"ip":"169.254.157.9","mac":"34:6f:24:be:b9:b1","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 5: {"ip":"169.254.157.230","mac":"9c:b6:d0:c2:8d:cd","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 6: {"ip":"169.254.169.254","mac":"(incomplete)","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 7: {"ip":"192.168.12.1","mac":"0:a0:de:f6:8:a5","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 8: {"ip":"192.168.12.10","mac":"90:9:d0:2a:e6:5","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 9: {"ip":"192.168.12.11","mac":"b0:e8:92:ed:f4:5f","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 10: {"ip":"192.168.12.12","mac":"2c:ff:65:dc:f2:41","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 11: {"ip":"192.168.12.17","mac":"90:9:d0:1e:c7:84","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 12: {"ip":"192.168.12.55","mac":"e4:50:eb:b7:86:f0","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 13: {"ip":"192.168.12.56","mac":"0:5:1b:cc:6a:aa","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 14: {"ip":"192.168.12.57","mac":"9c:76:e:57:f9:ea","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 15: {"ip":"192.168.12.72","mac":"58:11:22:9a:8d:fa","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 16: {"ip":"192.168.12.83","mac":"b8:27:eb:98:e5:68","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 17: {"ip":"192.168.12.91","mac":"f0:2f:74:21:30:2a","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 18: {"ip":"192.168.12.104","mac":"0:1e:6:42:a9:c3","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 19: {"ip":"192.168.12.105","mac":"60:55:f9:41:9a:98","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 20: {"ip":"192.168.12.108","mac":"30:5:5c:6a:a1:8d","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 21: {"ip":"192.168.12.110","mac":"64:d6:9a:7a:e8:65","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 22: {"ip":"192.168.12.114","mac":"b8:27:eb:eb:1a:ce","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 23: {"ip":"192.168.12.119","mac":"cc:96:e5:2f:8d:ab","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 24: {"ip":"192.168.12.120","mac":"dc:f5:5:68:4b:d3","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 25: {"ip":"192.168.12.126","mac":"10:a5:1d:2b:2e:1f","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 26: {"ip":"192.168.12.128","mac":"80:c:f9:1d:a9:4","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 27: {"ip":"192.168.12.129","mac":"f8:ff:c2:21:7c:58","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 28: {"ip":"192.168.12.130","mac":"f0:b3:ec:58:7d:71","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 29: {"ip":"192.168.12.132","mac":"f4:69:42:b1:aa:c9","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 30: {"ip":"192.168.12.140","mac":"1c:53:f9:34:56:9a","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 31: {"ip":"192.168.12.142","mac":"1c:93:c4:3f:29:13","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 32: {"ip":"192.168.12.143","mac":"50:14:79:f9:1b:e1","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 33: {"ip":"192.168.12.146","mac":"34:76:c5:f9:f6:3e","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 34: {"ip":"192.168.12.148","mac":"60:55:f9:40:11:a8","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 35: {"ip":"192.168.12.150","mac":"40:4c:ca:7d:b2:98","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 36: {"ip":"192.168.12.152","mac":"38:c9:86:19:c9:19","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 37: {"ip":"192.168.12.156","mac":"1e:44:8f:44:7:b2","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 38: {"ip":"192.168.12.159","mac":"5e:a2:24:a4:7e:70","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 39: {"ip":"192.168.12.160","mac":"f8:4d:89:7b:81:fd","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 40: {"ip":"192.168.12.161","mac":"14:c1:4e:67:e2:a0","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 41: {"ip":"192.168.12.162","mac":"54:14:f3:9d:7a:29","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 42: {"ip":"192.168.12.163","mac":"92:47:44:a1:53:26","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 43: {"ip":"192.168.12.165","mac":"f8:f:f9:53:5a:ea","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 44: {"ip":"192.168.12.188","mac":"f0:b3:ec:58:7d:71","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 45: {"ip":"192.168.12.208","mac":"a0:78:17:6e:d4:70","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 46: {"ip":"192.168.12.209","mac":"cc:96:e5:e8:f1:aa","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 47: {"ip":"192.168.12.214","mac":"ac:1f:6b:87:6e:41","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 48: {"ip":"192.168.12.215","mac":"4:bf:1b:13:71:9","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 49: {"ip":"192.168.12.218","mac":"f0:b3:ec:58:7d:71","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 50: {"ip":"192.168.12.230","mac":"d0:c6:37:7d:71:7","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 51: {"ip":"192.168.13.255","mac":"f8:f:f9:53:5a:ea","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 52: {"ip":"224.0.0.251","mac":"1:0:5e:0:0:fb","serviceInfo":"mdns.mcast.net","OS":"unknown","vendor":"unknown","type":"unknown"}
+Processing result item 53: {"ip":"239.255.255.250","mac":"1:0:5e:7f:ff:fa","serviceInfo":"?","OS":"unknown","vendor":"unknown","type":"unknown"}
+Wrote result data back to file: /Users/sf/ghq/github.com/Fukuda-Sakito/device_scan/src/scripts/results/result.json

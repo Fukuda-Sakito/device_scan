@@ -77,4 +77,11 @@ sequenceDiagram
 sudo nmap -O -T4 -iL src/scripts/results/ips.txt -oX src/scripts/results/results_nmap_O.xml
 ```
 
-2. 
+2. src/scripts/results/results_nmap_O_{i}.json の情報を元に、アプリで利用するマスターデータファイルの src/scripts/results/result.json に追記していく以下のファイルを実行
+``` zsh
+./src/scripts/edit_result.sh
+ts-node src/scripts/extract_and_clean_data.ts
+```
+
+## 備考
+本アプリケーションは表示形式をわかりやすくする目的でAppleのロゴを引用していますが、本アプリケーションは、独立した出版物であり、Apple Inc.が認定、後援、その他承認したものではありません。
