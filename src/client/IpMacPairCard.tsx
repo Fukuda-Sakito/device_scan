@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { CSSTransition } from "react-transition-group";
 import "./IpMacPairCard.css";
 
 interface IpMacPairCardProps {
   vendor: string;
   OS: string;
+  ip: string; // 追加
+  mac: string; // 追加
+  onCardClick: () => void;
 }
 
-const IpMacPairCard: React.FC<IpMacPairCardProps> = ({ vendor, OS }) => {
+const IpMacPairCard: React.FC<IpMacPairCardProps> = ({
+  vendor,
+  OS,
+  ip,
+  mac,
+  onCardClick,
+}) => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+    onCardClick();
+  };
+
   let logo;
   if (OS.includes("Android")) {
     logo = require("./images/Android_Robot.png");
@@ -25,16 +41,33 @@ const IpMacPairCard: React.FC<IpMacPairCardProps> = ({ vendor, OS }) => {
 
   return (
     <CSSTransition in={true} appear={true} timeout={300} classNames="fade">
-      <div className="m-2 w-1/6 p-4 bg-gradient-to-r from-indigo-700 to-sky-700 rounded-lg shadow-lg flex items-center justify-center space-x-2 cursor-pointer">
+      <div
+        className="m-2 w-1/6 p-4 bg-gradient-to-r from-indigo-700 to-sky-700 rounded-lg shadow-lg flex items-center justify-center space-x-2 cursor-pointer"
+        onClick={handleClick}
+      >
         <img
           src={logo}
           alt={OS + " logo"}
-          style={{ width: "80px", marginRight: "10px", alignSelf: "center" , backgroundColor: "white"}}
+          style={{
+            width: "80px",
+            marginRight: "10px",
+            alignSelf: "center",
+            backgroundColor: "white",
+          }}
         />
-        <div className="text-white">
-          <p className="text-center">Vendor: {vendor}</p>
-          <p className="text-center">OS: {OS}</p>
-        </div>
+        {isClicked ? (
+          <div className="flex flex-col text-white">
+            <p className="text-center">IP: {ip}</p>
+            <p className="text-center">MAC: {mac}</p>
+            <p className="text-center">Vendor: {vendor}</p>
+            <p className="text-center">OS: {OS}</p>
+          </div>
+        ) : (
+          <div className="text-white">
+            <p className="text-center">Vendor: {vendor}</p>
+            <p className="text-center">OS: {OS}</p>
+          </div>
+        )}
         <div className="text-white text-2xl">{">"}</div>
       </div>
     </CSSTransition>
