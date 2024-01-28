@@ -59,8 +59,8 @@ lines.forEach((line: string) => {
       // 一致する要素がある場合、その要素を新しい形式に変換します
       resultsJson[matchingResultIndex] = {
         ...resultsJson[matchingResultIndex],
-        OS: json.osmatch ? json.osmatch[0].name : null,
-        vendor: json.address ? json.address.vendor : null
+        OS: json.osmatch ? json.osmatch[0].name : "Unknown",
+        vendor: json.address ? json.address.vendor : "Unknown"
       };
       console.log(`Matching result: ${JSON.stringify(resultsJson[matchingResultIndex])}`);
     } else {
