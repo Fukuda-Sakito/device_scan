@@ -6,7 +6,7 @@ const currentDir = path.dirname(__filename);
 const xmlFilePath = path.join(currentDir, 'results/results_nmap_O.xml');
 const xml = readFileSync(xmlFilePath, 'utf-8');
 
-xml2js.parseString(xml, (err, result) => {
+xml2js.parseString(xml, (err: Error | null, result: any)  => {
   if (err) {
     throw err;
   }
@@ -23,7 +23,7 @@ xml2js.parseString(xml, (err, result) => {
     const ipv4Address = host.address.find((address: any) => address.$.addrtype === 'ipv4');
     const macAddress = host.address.find((address: any) => address.$.addrtype === 'mac');
     const osmatch = host.os && host.os[0].osmatch && host.os[0].osmatch[0].osclass
-    ? host.os[0].osmatch[0].osclass[0].$
+    ? host.os[0].osmatch[0].osclass.map((osclass: any) => osclass.$)
     : null;
     const hostInfo = {
       ipv4: ipv4Address ? ipv4Address.$.addr : null,

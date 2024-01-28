@@ -1,6 +1,11 @@
+
+
 <address addr="00:60:B9:A4:E1:C2" addrtype="mac" vendor="NEC Platforms"/>
+
 <address addr="B4:E6:2D:6A:F7:B1" addrtype="mac" vendor="Espressif"/>
+
 <address addr="30:FD:38:07:75:44" addrtype="mac" vendor="Google"/>
+
 <address addr="00:60:B9:A4:E1:C2" addrtype="mac" vendor="NEC Platforms"/>
 <osmatch name="Teldat K series gateway" accuracy="87" line="102178">
 <osclass type="broadband router" vendor="Teldat" osfamily="embedded" accuracy="87"/>
@@ -9,6 +14,7 @@
 <osclass type="print server" vendor="D-Link" osfamily="embedded" accuracy="85"><cpe>cpe:/h:dlink:dpr-1260</cpe></osclass>
 <osclass type="WAP" vendor="D-Link" osfamily="embedded" accuracy="85"><cpe>cpe:/h:dlink:dgl-4300</cpe><cpe>cpe:/h:dlink:dgl-4500</cpe><cpe>cpe:/h:dlink:dir-615</cpe><cpe>cpe:/h:dlink:dir-625</cpe><cpe>cpe:/h:dlink:dir-628</cpe><cpe>cpe:/h:dlink:dir-655</cpe><cpe>cpe:/h:dlink:dir-855</cpe></osclass>
 </osmatch>
+
 <address addr="B4:E6:2D:6A:F7:B1" addrtype="mac" vendor="Espressif"/>
 <osmatch name="NodeMCU firmware (lwIP stack)" accuracy="98" line="89123">
 <osclass type="specialized" vendor="NodeMCU" osfamily="embedded" accuracy="98"><cpe>cpe:/o:nodemcu:nodemcu</cpe></osclass>
@@ -46,6 +52,7 @@
 <osclass type="specialized" vendor="Philips" osfamily="embedded" accuracy="89"><cpe>cpe:/h:philips:hue_bridge</cpe></osclass>
 <osclass type="general purpose" vendor="lwIP" osfamily="lwIP" accuracy="89"><cpe>cpe:/a:lwip_project:lwip</cpe></osclass>
 </osmatch>
+
 <address addr="30:FD:38:07:75:44" addrtype="mac" vendor="Google"/>
 <osmatch name="Linux 2.6.32 - 3.10" accuracy="99" line="56580">
 <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="99"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
