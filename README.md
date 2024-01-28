@@ -77,9 +77,8 @@ sequenceDiagram
 sudo nmap -O -T4 -iL src/scripts/results/ips.txt -oX src/scripts/results/results_nmap_O.xml
 ```
 
-:::note info
-nmap のリファレンスより、[法的通知事項](https://nmap.org/man/ja/man-legal.html)を確認すると ｢独自開発の実行可能インストーラに統合/組込/集約する｣ ことは派生著作物に該当するとされている。有料契約するか、問い合わせることで派生著作物の確認をしてもらえるとのことだが、本アプリケーションでは事前準備ということで、アプリケーションに組み込まずに分けて実行した。上記のコマンド自体は nmap に用意されているオプションを指定しているだけである。
-:::
+> [!NOTE]
+> nmap のリファレンスより、[法的通知事項](https://nmap.org/man/ja/man-legal.html)を確認すると ｢独自開発の実行可能インストーラに統合/組込/集約する｣ ことは派生著作物に該当するとされている。有料契約するか、問い合わせることで派生著作物の確認をしてもらえるとのことだが、本アプリケーションでは事前準備ということで、アプリケーションに組み込まずに分けて実行した。上記のコマンド自体は nmap に用意されているオプションを指定しているだけである。
 
 2. src/scripts/results/results_nmap_O_{i}.json の情報を元に、アプリで利用するマスターデータファイルの src/scripts/results/result.json に追記していく以下のファイルを実行
 ``` zsh
