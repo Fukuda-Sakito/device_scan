@@ -24,3 +24,5 @@ yarn-error.log*
 
 # results
 nmap_scan_*.txt
+output*
+temp*

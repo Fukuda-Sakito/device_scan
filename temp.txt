@@ -1,88 +1,106 @@
-<address addr="00:60:B9:A4:E1:C2" addrtype="mac" vendor="NEC Platforms"/>
-<address addr="B4:E6:2D:6A:F7:B1" addrtype="mac" vendor="Espressif"/>
-<address addr="30:FD:38:07:75:44" addrtype="mac" vendor="Google"/>
-<address addr="00:60:B9:A4:E1:C2" addrtype="mac" vendor="NEC Platforms"/>
-<osmatch name="Teldat K series gateway" accuracy="90" line="102178">
-<osclass type="broadband router" vendor="Teldat" osfamily="embedded" accuracy="90"/>
+<address addr="AC:44:F2:0A:6C:07" addrtype="mac" vendor="Yamaha"/>
+<address addr="48:21:0B:56:DC:F0" addrtype="mac" vendor="Pegatron"/>
+<address addr="48:21:0B:56:DC:F0" addrtype="mac" vendor="Pegatron"/>
+<address addr="F0:D4:15:7D:AF:37" addrtype="mac" vendor="Intel Corporate"/>
+<address addr="F0:9F:FC:2F:2D:CD" addrtype="mac" vendor="Sharp"/>
+<address addr="AC:44:F2:93:5F:F8" addrtype="mac" vendor="Yamaha"/>
+<address addr="64:BC:58:8C:8D:40" addrtype="mac" vendor="Intel Corporate"/>
+<address addr="AC:44:F2:93:5F:F8" addrtype="mac" vendor="Yamaha"/>
+<osmatch name="Yamaha RT58i or RT107e router" accuracy="100" line="107029">
+<osclass type="router" vendor="Yamaha" osfamily="embedded" accuracy="100"><cpe>cpe:/h:yamaha:netvolante_rt58i</cpe></osclass>
 </osmatch>
-<osmatch name="D-Link DPR-1260 print server; or DGL-4300, DGL-4500, DIR-615, DIR-625, DIR-628, DIR-655, or DIR-855 WAP" accuracy="87" line="19997">
-<osclass type="print server" vendor="D-Link" osfamily="embedded" accuracy="87"><cpe>cpe:/h:dlink:dpr-1260</cpe></osclass>
-<osclass type="WAP" vendor="D-Link" osfamily="embedded" accuracy="87"><cpe>cpe:/h:dlink:dgl-4300</cpe><cpe>cpe:/h:dlink:dgl-4500</cpe><cpe>cpe:/h:dlink:dir-615</cpe><cpe>cpe:/h:dlink:dir-625</cpe><cpe>cpe:/h:dlink:dir-628</cpe><cpe>cpe:/h:dlink:dir-655</cpe><cpe>cpe:/h:dlink:dir-855</cpe></osclass>
+<address addr="AC:44:F2:0A:6C:07" addrtype="mac" vendor="Yamaha"/>
+<osmatch name="Linux 3.2 - 3.16" accuracy="96" line="65151">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
 </osmatch>
-<osmatch name="SiliconDust HDHomeRun set top box" accuracy="85" line="97936">
-<osclass type="media device" vendor="Silicondust" osfamily="embedded" accuracy="85"><cpe>cpe:/h:silicondust:hdhr</cpe></osclass>
+<osmatch name="Linux 3.2 - 4.9" accuracy="96" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
 </osmatch>
-<address addr="B4:E6:2D:6A:F7:B1" addrtype="mac" vendor="Espressif"/>
-<osmatch name="NodeMCU firmware (lwIP stack)" accuracy="98" line="89123">
-<osclass type="specialized" vendor="NodeMCU" osfamily="embedded" accuracy="98"><cpe>cpe:/o:nodemcu:nodemcu</cpe></osclass>
-<osclass type="general purpose" vendor="lwIP" osfamily="lwIP" accuracy="98"><cpe>cpe:/a:lwip_project:lwip</cpe></osclass>
+<osmatch name="Amazon Kindle Paperwhite" accuracy="95" line="2737">
+<osclass type="media device" vendor="Amazon" osfamily="embedded" accuracy="95"/>
 </osmatch>
-<osmatch name="Espressif esp8266 firmware (lwIP stack)" accuracy="98" line="24709">
-<osclass type="specialized" vendor="Espressif" osfamily="embedded" accuracy="98"/>
-<osclass type="general purpose" vendor="lwIP" osfamily="lwIP" accuracy="98"><cpe>cpe:/a:lwip_project:lwip</cpe></osclass>
+<osmatch name="CyanogenMod 12 (Android 5.0.2)" accuracy="95" line="19672">
+<osclass type="phone" vendor="CyanogenMod" osfamily="CyanogenMod" osgen="12.X" accuracy="95"><cpe>cpe:/o:cyanogenmod:cyanogenmod:12</cpe></osclass>
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="5.X" accuracy="95"><cpe>cpe:/o:google:android:5.0.2</cpe></osclass>
 </osmatch>
-<osmatch name="ESPEasy OS (lwIP stack)" accuracy="94" line="68879">
-<osclass type="specialized" vendor="lwIP" osfamily="lwIP" accuracy="94"><cpe>cpe:/a:lwip_project:lwip</cpe></osclass>
+<osmatch name="Android 4.4.2" accuracy="95" line="31334">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="4.4.X" accuracy="95"><cpe>cpe:/o:google:android:4.4.2</cpe></osclass>
 </osmatch>
-<osmatch name="Philips Hue Bridge (lwIP stack v1.4.0)" accuracy="92" line="93284">
-<osclass type="specialized" vendor="Philips" osfamily="embedded" accuracy="92"><cpe>cpe:/h:philips:hue_bridge</cpe></osclass>
-<osclass type="general purpose" vendor="lwIP" osfamily="lwIP" osgen="1.4.X" accuracy="92"><cpe>cpe:/a:lwip_project:lwip:1.4</cpe></osclass>
+<osmatch name="Android 4.1 - 6.0 (Linux 3.4 - 3.14)" accuracy="95" line="31415">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="4.X" accuracy="95"><cpe>cpe:/o:google:android:4</cpe></osclass>
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="5.X" accuracy="95"><cpe>cpe:/o:google:android:5</cpe></osclass>
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="6.X" accuracy="95"><cpe>cpe:/o:google:android:6</cpe></osclass>
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
 </osmatch>
-<osmatch name="Ocean Signal E101V emergency beacon (FreeRTOS/lwIP)" accuracy="92" line="90125">
-<osclass type="specialized" vendor="Ocean Signal" osfamily="embedded" accuracy="92"/>
-<osclass type="general purpose" vendor="lwIP" osfamily="lwIP" accuracy="92"><cpe>cpe:/a:lwip_project:lwip</cpe></osclass>
+<osmatch name="Android 5.0 - 6.0.1 (Linux 3.4)" accuracy="95" line="31521">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="5.X" accuracy="95"><cpe>cpe:/o:google:android:5</cpe></osclass>
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="6.X" accuracy="95"><cpe>cpe:/o:google:android:6</cpe></osclass>
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
 </osmatch>
-<osmatch name="Grandstream GXP1105 VoIP phone" accuracy="91" line="32020">
-<osclass type="VoIP phone" vendor="Grandstream" osfamily="embedded" accuracy="91"><cpe>cpe:/h:grandstream:gxp1105</cpe></osclass>
+<osmatch name="Android 5.0 - 7.0 (Linux 3.4 - 3.10)" accuracy="95" line="31549">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="5.X" accuracy="95"><cpe>cpe:/o:google:android:5</cpe></osclass>
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="6.X" accuracy="95"><cpe>cpe:/o:google:android:6</cpe></osclass>
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="7.X" accuracy="95"><cpe>cpe:/o:google:android:7</cpe></osclass>
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
 </osmatch>
-<osmatch name="lwIP 1.4.0 lightweight TCP/IP stack" accuracy="91" line="68843">
-<osclass type="general purpose" vendor="lwIP" osfamily="lwIP" osgen="1.4.X" accuracy="91"><cpe>cpe:/a:lwip_project:lwip:1.4.0</cpe></osclass>
+<osmatch name="Android 5.0.1 (Linux 3.10)" accuracy="95" line="31609">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="5.X" accuracy="95"><cpe>cpe:/o:google:android:5.0.1</cpe></osclass>
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
 </osmatch>
-<osmatch name="Rigol DSG3060 signal generator" accuracy="91" line="95202">
-<osclass type="specialized" vendor="Rigol Technologies" osfamily="embedded" accuracy="91"><cpe>cpe:/h:rigol_technologies:dsg3060</cpe></osclass>
+<osmatch name="Android 5.1" accuracy="95" line="31647">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="5.X" accuracy="95"><cpe>cpe:/o:google:android:5.1</cpe></osclass>
 </osmatch>
-<osmatch name="Advanced Illumination DCS-100E lighting controller" accuracy="90" line="1611">
-<osclass type="specialized" vendor="Advanced Illumination" osfamily="embedded" accuracy="90"><cpe>cpe:/h:advanced_illumination:dcs-100e</cpe></osclass>
+<address addr="F0:D4:15:7D:AF:37" addrtype="mac" vendor="Intel Corporate"/>
+<address addr="58:1C:F8:91:E0:8D" addrtype="mac" vendor="Intel Corporate"/>
+<osmatch name="Linux 4.15 - 5.8" accuracy="100" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
 </osmatch>
-<osmatch name="Enlogic PDU (FreeRTOS/lwIP)" accuracy="90" line="24220">
-<osclass type="specialized" vendor="Enlogic" osfamily="embedded" accuracy="90"/>
-<osclass type="specialized" vendor="lwIP" osfamily="lwIP" accuracy="90"><cpe>cpe:/a:lwip_project:lwip</cpe></osclass>
+<address addr="58:1C:F8:91:E0:8D" addrtype="mac" vendor="Intel Corporate"/>
+<osmatch name="Linux 4.15 - 5.8" accuracy="100" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
 </osmatch>
-<address addr="30:FD:38:07:75:44" addrtype="mac" vendor="Google"/>
-<osmatch name="Linux 2.6.32 - 3.10" accuracy="99" line="56580">
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="99"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<address addr="64:BC:58:8C:8D:40" addrtype="mac" vendor="Intel Corporate"/>
+<osmatch name="Microsoft Windows XP SP3" accuracy="87" line="84889">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="87"><cpe>cpe:/o:microsoft:windows_xp::sp3</cpe></osclass>
+</osmatch>
+<address addr="F0:9F:FC:2F:2D:CD" addrtype="mac" vendor="Sharp"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="99" line="65323">
 <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="99"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="99"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
 </osmatch>
-<osmatch name="Linux 3.10" accuracy="97" line="63056">
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+<osmatch name="Linux 3.10 - 4.11" accuracy="96" line="63448">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
 </osmatch>
-<osmatch name="Linux 3.2 - 3.16" accuracy="97" line="65151">
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osmatch name="OpenWrt Chaos Calmer 15.05 (Linux 3.18) or Designated Driver (Linux 4.1 or 4.4)" accuracy="96" line="66953">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4.1</cpe></osclass>
 </osmatch>
-<osmatch name="Linux 2.6.32 - 3.13" accuracy="96" line="56610">
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osmatch name="Linux 4.10" accuracy="96" line="67166">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4.10</cpe></osclass>
+</osmatch>
+<osmatch name="Android 5.0 - 6.0.1 (Linux 3.4)" accuracy="96" line="31521">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="5.X" accuracy="96"><cpe>cpe:/o:google:android:5</cpe></osclass>
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="6.X" accuracy="96"><cpe>cpe:/o:google:android:6</cpe></osclass>
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 3.16" accuracy="96" line="65151">
 <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
 </osmatch>
-<osmatch name="Linux 3.6" accuracy="96" line="65764">
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.6</cpe></osclass>
+<osmatch name="Linux 4.4" accuracy="95" line="67471">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
 </osmatch>
-<osmatch name="Linux 3.7" accuracy="96" line="65912">
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.7</cpe></osclass>
+<osmatch name="DD-WRT v3.0 (Linux 4.4.2)" accuracy="95" line="66974">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:4.4.2</cpe></osclass>
 </osmatch>
-<osmatch name="Linux 2.6.32 - 3.5" accuracy="96" line="56784">
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
-<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osmatch name="Linux 3.16" accuracy="95" line="64180">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
 </osmatch>
-<osmatch name="Android 4.1 (Linux 3.0)" accuracy="96" line="31126">
-<osclass type="phone" vendor="Google" osfamily="Android" osgen="4.1.X" accuracy="96"><cpe>cpe:/o:google:android:4.1</cpe></osclass>
-<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.0</cpe></osclass>
-</osmatch>
-<osmatch name="Tizen" accuracy="96" line="102723">
-<osclass type="specialized" vendor="Tizen" osfamily="Tizen" accuracy="96"><cpe>cpe:/o:tizen:tizen</cpe></osclass>
-</osmatch>
-<osmatch name="CyanogenMod 11 (Android 4.4.4)" accuracy="96" line="19632">
-<osclass type="phone" vendor="CyanogenMod" osfamily="CyanogenMod" osgen="11.X" accuracy="96"><cpe>cpe:/o:cyanogenmod:cyanogenmod:11</cpe></osclass>
-<osclass type="phone" vendor="Google" osfamily="Android" osgen="4.X" accuracy="96"><cpe>cpe:/o:google:android:4.4.4</cpe></osclass>
+<osmatch name="Linux 3.18" accuracy="95" line="64438">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
 </osmatch>
 <osmatch name="Apple macOS 12 (Monterey) (Darwin 21.6.0)" accuracy="100" line="108008">
 <osclass type="general purpose" vendor="Apple" osfamily="macOS" osgen="12.X" accuracy="100"/>
