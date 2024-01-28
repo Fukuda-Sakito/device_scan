@@ -5,10 +5,10 @@ import logo from './images/Android_Robot.png';
 
 interface IpMacPairCardProps {
   vendor: string;
-  os: string;
+  OS: string;
 }
 
-const IpMacPairCard: React.FC<IpMacPairCardProps> = ({ vendor, os }) => {
+const IpMacPairCard: React.FC<IpMacPairCardProps> = ({ vendor, OS }) => {
   return (
     <CSSTransition
       in={true}
@@ -20,7 +20,7 @@ const IpMacPairCard: React.FC<IpMacPairCardProps> = ({ vendor, os }) => {
         <img src={logo} alt="logo" style={{ width: '20px', marginRight: '10px', alignSelf: 'center' }} />
         <div className="text-white">
           <p className="text-center">Vendor: {vendor}</p>
-          <p className="text-center">OS: {os}</p>
+          <p className="text-center">OS: {OS}</p>
         </div>
         <div className="text-white text-2xl">{'>'}</div>
       </div>

@@ -5,7 +5,7 @@ interface Result {
   ip: string;
   mac: string;
   vendor: string; // 追加
-  os: string; // 追加
+  OS: string; // 追加
   // Add other properties if needed
 }
 
@@ -37,7 +37,7 @@ const ScanResults = () => {
         <div className="text-white text-2xl">読み込み中...</div> // ローディング中のメッセージを表示
       ) : (
         results && results.map((result, index) => (
-          <IpMacPairCard key={index} vendor={result.vendor} os={result.os} />
+          <IpMacPairCard key={index} vendor={result.vendor} OS={result.OS} />
         ))
       )}
     </div>
