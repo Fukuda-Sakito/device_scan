@@ -54,10 +54,15 @@ lines.forEach((line: string) => {
     console.log(`mac: ${json.address ? json.address.addr : 'N/A'}, osmatch.name: ${json.osmatch ? json.osmatch[0].name : 'N/A'}, vendor: ${json.address ? json.address.vendor : 'N/A'}`); // 追加
 
     // results/result.json の mac が一致する要素を探します
-    let matchingResult = resultsJson.find((result: any) => result.mac === (json.address ? json.address.addr : null));
-    if (matchingResult) {
-      // 一致する要素がある場合、その JSON 内容全てを出力します
-      console.log(`Matching result: ${JSON.stringify(matchingResult)}`);
+    let matchingResultIndex = resultsJson.findIndex((result: any) => result.mac === (json.address ? json.address.addr : null));
+    if (matchingResultIndex !== -1) {
+      // 一致する要素がある場合、その要素を新しい形式に変換します
+      resultsJson[matchingResultIndex] = {
+        ...resultsJson[matchingResultIndex],
+        OS: json.osmatch ? json.osmatch[0].name : null,
+        vendor: json.address ? json.address.vendor : null
+      };
+      console.log(`Matching result: ${JSON.stringify(resultsJson[matchingResultIndex])}`);
     } else {
       // 一致する要素がない場合、何もしません
       console.log(`No matching result for mac: ${json.address ? json.address.addr : 'N/A'}`);
@@ -81,3 +86,5 @@ lines.forEach((line: string) => {
     console.log(`Adding osmatch: ${JSON.stringify(obj)}, mac: ${json.address ? json.address.addr : 'N/A'}`); // 追加
   }
 });
+// 最後に、変更した内容を result.json に書き戻します
+fs.writeFileSync(path.join(resultsDir, 'result.json'), JSON.stringify(resultsJson));
